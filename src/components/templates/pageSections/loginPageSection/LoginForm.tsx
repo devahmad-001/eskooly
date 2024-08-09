@@ -1,9 +1,18 @@
 "use client";
 import React from "react";
 import Typed from "typed.js";
-import { RiLockPasswordFill } from "react-icons/ri";
-import { TfiEmail } from "react-icons/tfi";
 import InputField from "@/components/shared/ui/InputFeild";
+import Button from "@/components/shared/ui/Button";
+import styled from "@emotion/styled";
+const P49 = styled.p`
+  margin-top: 20px;
+  padding: 10px 0px;
+  box-sizing: border-box;
+  clear: both;
+  font-size: 14px;
+  position: relative;
+  text-align: left;
+`;
 export default function LoginForm() {
   const el = React.useRef(null);
   React.useEffect(() => {
@@ -78,7 +87,6 @@ export default function LoginForm() {
                     </article> */}
                     <div className="style-22">
                       <InputField placeholder="Your Email *" type="email" />
-
                       <InputField
                         placeholder="Choose Password *"
                         type="password"
@@ -121,11 +129,33 @@ export default function LoginForm() {
                         </tr>
                       </tbody>
                     </table> */}
-                      <p className="style-49">
-                        <button onclick="step1(event);" className="style-50">
-                          Sign up
-                        </button>
-                      </p>
+                      <P49>
+                        <Button
+                          text="Sipn Up"
+                          font-family={`BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;`}
+                          lineHeight="0rem"
+                          width={"100% !important"}
+                          backgroundColor={" rgba(0, 0, 0, 0)"}
+                          display="block"
+                          textAlign="center"
+                          verticalAlign="top"
+                          background="rgba(0, 0, 0, 0)
+    linear-gradient(45deg, rgb(15, 94, 247), rgb(15, 94, 247)) repeat scroll 0%
+    0% / auto padding-box border-box"
+                          boxShadow="none"
+                          margin="0"
+                          border="none"
+                          transition="all 0.5s ease 0s"
+                          cursor="pointer"
+                          borderColor="rgb(255, 255, 255)"
+                          borderRadius="31.25rem"
+                          padding="1.375rem 2.5rem"
+                          fontSize="0.875rem"
+                          height="2.75rem"
+                        />
+                      </P49>
                     </div>
                   </form>{" "}
                   {/* Sign up form */}
@@ -172,7 +202,14 @@ export default function LoginForm() {
         <div className="register-section ">
           <div className="btnBox">
             <p>Already Have an Account ?</p>
-            <button>Login</button>
+            <Button
+              fontSize="medium"
+              text="Login"
+              minWidth="5rem"
+              borderRadius="3.813rem"
+              padding="0.25rem 1rem 0,25rem 1rem"
+              backgroundColor=" rgb(15, 94, 247)"
+            />
           </div>
           <h1>
             Start managing <span>free</span> now !

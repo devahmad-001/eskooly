@@ -10,7 +10,6 @@ const Container = styled.div`
   margin-bottom: 10.5px;
   box-sizing: border-box;
 `;
-
 const Wrapper = styled.div`
   outline: rgb(74, 74, 74) none 0px;
   box-sizing: border-box;
@@ -19,7 +18,6 @@ const Wrapper = styled.div`
   position: relative;
   text-align: left;
 `;
-
 const Input = styled.input`
   font-size: 17.5px;
   height: 42px;
@@ -46,7 +44,6 @@ const Input = styled.input`
   position: relative;
   vertical-align: top;
 `;
-
 const IconWrapper = styled.span`
   position: absolute;
   left: 10px;

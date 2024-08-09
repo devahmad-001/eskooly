@@ -1,43 +1,39 @@
+"use client";
 import React from "react";
-import styled from "@emotion/styled/macro";
+import styled from "@emotion/styled";
 import { btnAttributes } from "../../../../Type";
 
-const Btn = styled.button`
-  border: none;
-  display: block;
-  width: 100% !important;
-  text-align: center;
-  border-radius: 500px;
-  padding: 22px 40px;
-  line-height: 0px;
-  transition: all 0.5s ease 0s;
-  color: rgb(255, 255, 255);
-  background: rgba(0, 0, 0, 0)
-    linear-gradient(45deg, rgb(15, 94, 247), rgb(15, 94, 247)) repeat scroll 0%
-    0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(255, 255, 255);
-  border-width: 0px;
-  cursor: pointer;
-  justify-content: center;
-  white-space: nowrap;
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica,
-    Arial, sans-serif;
-  box-sizing: border-box;
-  margin: 0px;
-  appearance: none;
-  align-items: center;
-  box-shadow: none;
-  font-size: 14px;
-  height: 44px;
-  position: relative;
-  vertical-align: top;
-  user-select: none;
+export default function Button(props: btnAttributes) {
+  const Btn = styled.button`
+    border: ${props.border};
+    display: block;
+    min-width: ${props.width};
+    text-align: ${props.textAlign};
+    border-radius: ${props.borderRadius};
+    padding: ${props.padding};
+    line-height: ${props.lineHeight};
+    transition: ${props.transition};
+    color: ${props.color};
+    background: ${props.background};
+    background-color: ${props.backgroundColor};
+    border-color: ${props.borderColor};
+    border-width: ${props.borderWidth};
+    cursor: ${props.cursor};
+    font-family: ${props.fontFamily};
+    box-sizing: ${props.boxSizing};
+    margin: ${props.margin};
+    box-shadow: ${props.boxShadow};
+    font-size: ${props.fontSize};
+    height: ${props.height};
+    position: ${props.position};
+    :hover{
+      transition: ${props.transition};
+      background-color: ${props.hoverBackgroundColor};
+    }
 `;
-
-export default function Button(props:btnAttributes) {
-  return <> 
-  <Btn/>
-   </>;
+  return (
+    <>
+      <Btn>{props.text}</Btn>
+    </>
+  );
 }

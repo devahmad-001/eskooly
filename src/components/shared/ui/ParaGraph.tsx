@@ -2,8 +2,9 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { paraGraphAttributes } from "../../../../Type";
-export default function ParaGraph(props:paraGraphAttributes) {
+export default function ParaGraph(props: paraGraphAttributes) {
   const Para = styled.p`
+    line-height: ${props.lineHeight};
     position: ${props.position};
     text-decoration: ${props.TextDecoration};
     text-align: ${props.textAlign};
@@ -21,7 +22,9 @@ export default function ParaGraph(props:paraGraphAttributes) {
     line-height: ${props.lineHeight};
     vertical-align: ${props.verticalAlign};
   `;
-  return <>
-  <Para>{props.text}</Para>
-  </>;
+  return (
+    <>
+      <Para>{props.text}</Para>
+    </>
+  );
 }

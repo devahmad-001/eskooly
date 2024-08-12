@@ -5,9 +5,12 @@ import { btnAttributes } from "../../../../Type";
 
 export default function Button(props: btnAttributes) {
   const Btn = styled.button`
+    width: ${props.width};
+    max-width: ${props.maxWidth};
+    min-width: ${props.minWidth};
+    height: ${props.height};
     border: ${props.border};
     display: block;
-    min-width: ${props.width};
     text-align: ${props.textAlign};
     border-radius: ${props.borderRadius};
     padding: ${props.padding};
@@ -20,17 +23,16 @@ export default function Button(props: btnAttributes) {
     border-width: ${props.borderWidth};
     cursor: ${props.cursor};
     font-family: ${props.fontFamily};
-    box-sizing: ${props.boxSizing};
-    margin: ${props.margin};
-    box-shadow: ${props.boxShadow};
     font-size: ${props.fontSize};
-    height: ${props.height};
+    box-sizing: ${props.boxSizing};
+    box-shadow: ${props.boxShadow};
+    margin: ${props.margin};
     position: ${props.position};
-    :hover{
+    :hover {
       transition: ${props.transition};
       background-color: ${props.hoverBackgroundColor};
     }
-`;
+  `;
   return (
     <>
       <Btn>{props.text}</Btn>

@@ -21,5 +21,9 @@ export default function Heading(props: headingAttributes) {
     line-height: ${props.lineHeight};
     vertical-align: ${props.verticalAlign};
   `;
-  return <><Headings>{props.text}</Headings></>;
+  return (
+    <>
+      <Headings>{props.text}</Headings>
+    </>
+  );
 }

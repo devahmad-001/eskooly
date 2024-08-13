@@ -1,13 +1,19 @@
+import Facilities from "@/components/templates/homePage/facilities/Facilities";
+import Allfeatures from "@/components/templates/homePage/featuress/allfeatures/AllFeatures";
+import SchoolFeatures from "@/components/templates/homePage/featuress/schoolFeatures/SchoolFeatures";
+import { Globe } from "@/components/templates/homePage/globe/Globecanvas";
+import Management from "@/components/templates/homePage/managementSystem/Management";
+import Trust from "@/components/templates/homePage/trust/Trust";
 import React from "react";
-import WhyUsPage from "@/components/templates/homePage/whyUs/WhyUsPage";
-import Features from "@/components/templates/homePage/features/Features";
-import FeaturesBox from "@/components/templates/homePage/features/FeaturesBox";
 export default function Home() {
   return (
     <>
-        <FeaturesBox />
-    {/* <Features/> */}
-      {/* <WhyUsPage /> */}
+      <Globe />
+      <SchoolFeatures />
+      <Facilities />
+      <Allfeatures />
+      <Management />
+      <Trust/>
     </>
   );
 }

@@ -1,3 +1,40 @@
+////////////////   Html    ///////////////
+
+// Import ReactNode for the childeren
+import { ReactNode } from "react";
+export type flexboxAttributes = {
+  borderRigth?: string;
+  borderLeft?: string;
+  borderTop?: string;
+  borderBottom?: string;
+  backgroundSize?: string;
+  backgroundRepeat?: string;
+  backgroundImgURL?: string;
+  position?: string;
+  padding?: string;
+  background?: string;
+  border?: string;
+  borderRadius?: string;
+  columnGap?: string;
+  rowGap?: string;
+  backgroundColor?: string;
+  display?: string;
+  flexDirection?: string;
+  flexWrap?: string;
+  justifyContent?: string;
+  alignItems?: string;
+  alignContent?: string;
+  gap?: string;
+  alignSelf?: string;
+  flexBasis?: string;
+  flexGrow?: string;
+  flexShrink?: string;
+  flexOrder?: string;
+  order?: string;
+  width?: string;
+  height?: string;
+  children?: ReactNode;
+};
 export type inputAttributes = {
   type?: string;
   placeholder?: string;
@@ -114,7 +151,7 @@ export type paraGraphAttributes = {
   className?: string;
   TextDecoration?: string;
   textAlign?: string;
-  text?: string;
+  text?: string | ReactNode;
   fontFamily?: string;
   fontWeight?: string;
   fontSize?: string;
@@ -139,72 +176,6 @@ export type imgAttributes = {
   alt?: string;
   src?: string;
 };
-// Import ReactNode for the
-import { ReactNode } from "react";
-export type flexboxAttributes = {
-  padding?: string;
-  background?: string;
-  border?: string;
-  borderRadius?: string;
-  columnGap?: string;
-  rowGap?: string;
-  backgroundColor?: string;
-  display?: string;
-  flexDirection?: string;
-  flexWrap?: string;
-  justifyContent?: string;
-  alignItems?: string;
-  alignContent?: string;
-  gap?: string;
-  alignSelf?: string;
-  flexBasis?: string;
-  flexGrow?: string;
-  flexShrink?: string;
-  flexOrder?: string;
-  order?: string;
-  width?: string;
-  height?: string;
-  children?: ReactNode;
-};
-// Features
-export const featuresData = [
-  {
-    heading: "Absolutely Free",
-    para: "eSkooly is an absolutely 100% free school management software for a lifetime with no limitations. No need to buy anything. Just Sign Up",
-    gif: "/imgs/featuresGifs/cloud.gif",
-    direction: "row",
-  },
-  {
-    heading: "Responsive Web Design",
-    para: "You can use our free school management software on any device, like Mobile, Tablet, Laptop, or desktop due to its responsive design.",
-    gif: "/imgs/featuresGifs/support.gif",
-    direction: "row-reverse",
-  },
-  {
-    heading: "Cloud Based Software",
-    para: "eSkooly is free school software that is always online, you can access it from anywhere, anytime. We will take care of your data and backups.",
-    gif: "/imgs/featuresGifs/cloud.gif",
-    direction: "row",
-  },
-  {
-    heading: "Infographics & Animations",
-    para: "We use infographics and animations to explain student's reports and results. Our free school software facilitates you with the optimized result.Fast, Secure & Ea",
-    gif: "/imgs/featuresGifs/support.gif",
-    direction: "row-reverse",
-  },
-  {
-    heading: "Regular Updates & Support",
-    para: "We add new and awesome features regularly to make our school administrative software unmatchable. Free online 24/7 support for users.",
-    gif: "/imgs/featuresGifs/cloud.gif",
-    direction: "row",
-  },
-  {
-    heading: "Fast, Secure & Easy",
-    para: "We use advanced tools and technologies to build up this free school software. It is super fast, secure, reliable, and easy to use and manage.",
-    gif: "/imgs/featuresGifs/support.gif",
-    direction: "row-reverse",
-  },
-];
 export type iconbutton = {
   maxWidth?: string;
   text?: string;
@@ -241,6 +212,7 @@ export type iconbutton = {
   icon?: string;
   hoverBackgroundColor?: string;
   hoverBackground?: string;
+  hoverColor?: string;
   hoverBorder?: string;
   hoverOpacity?: string;
   transition?: string;
@@ -248,20 +220,122 @@ export type iconbutton = {
   hoverBoxShadow?: string;
   background?: string;
   height?: string;
+  borderRigth?: string;
+  borderLeft?: string;
+  borderTop?: string;
+  borderBottom?: string;
 };
-// Facilities
+
+////////////////   Variables    ///////////////
+
+// School Features Section Home Page
+export const features = {
+  allFeatures: [
+    {
+      heading: "Institute Info",
+      para: "You can set your all institute info like logo, name, target line ect, which will display on every printable documents and reports.",
+      src: "/imgs/featuresGifs/cloud.gif",
+    },
+    {
+      heading: "Class Management",
+      para: "This school management software manage your classes in an easy way. starts from students to subjects, courses to marks.",
+      src: "/imgs/allfeatures/cloud.gif",
+    },
+    {
+      heading: "Exams Management",
+      para: "eSkooly has a complete solution for exams management starting from new exam to final result, reports and result cards.",
+      src: "/imgs/allfeatures/cloud.gif",
+    },
+    {
+      heading: "Attendance System",
+      para: "Our free school software has outstanding online attendance management system for students and staff.",
+      src: "/imgs/allfeatures/cloud.gif",
+    },
+    {
+      heading: "Fee Management",
+      para: "Our school software opens an account for every student to manage its fees and dues. eSkooly manages everything automatically.",
+      src: "/imgs/allfeatures/cloud.gif",
+    },
+    {
+      heading: "Tests Management",
+      para: "Managing class tests is a piece of cake with this free school management software. It keeps record of every class test.",
+      src: "/imgs/allfeatures/cloud.gif",
+    },
+    {
+      heading: "Accounts",
+      para: "Managing income, expense, and staff salaries is no more difficult. By using our software you can manage quite easly.",
+      src: "/imgs/allfeatures/cloud.gif",
+    },
+    {
+      heading: "Printable Reports",
+      para: "You can print all the reports and letters like, admission letter, fee slip, salary slip, job letter and result cards etc.",
+      src: "/imgs/allfeatures/cloud.gif",
+    },
+  ],
+  schoolFeatures: [
+    {
+      heading: "Absolutely Free",
+      para: "eSkooly is an absolutely 100% free school management software for a lifetime with no limitations. No need to buy anything. Just Sign Up",
+      gif: "/imgs/featuresGifs/cloud.gif",
+      direction: "row",
+    },
+    {
+      heading: "Responsive Web Design",
+      para: "You can use our free school management software on any device, like Mobile, Tablet, Laptop, or desktop due to its responsive design.",
+      gif: "/imgs/featuresGifs/support.gif",
+      direction: "row-reverse",
+    },
+    {
+      heading: "Cloud Based Software",
+      para: "eSkooly is free school software that is always online, you can access it from anywhere, anytime. We will take care of your data and backups.",
+      gif: "/imgs/featuresGifs/cloud.gif",
+      direction: "row",
+    },
+    {
+      heading: "Infographics & Animations",
+      para: "We use infographics and animations to explain student's reports and results. Our free school software facilitates you with the optimized result.Fast, Secure & Ea",
+      gif: "/imgs/featuresGifs/support.gif",
+      direction: "row-reverse",
+    },
+    {
+      heading: "Regular Updates & Support",
+      para: "We add new and awesome features regularly to make our school administrative software unmatchable. Free online 24/7 support for users.",
+      gif: "/imgs/featuresGifs/cloud.gif",
+      direction: "row",
+    },
+    {
+      heading: "Fast, Secure & Easy",
+      para: "We use advanced tools and technologies to build up this free school software. It is super fast, secure, reliable, and easy to use and manage.",
+      gif: "/imgs/featuresGifs/support.gif",
+      direction: "row-reverse",
+    },
+  ],
+};
+
+// Facilities Section Home Page
 export const facilitiesData = [
   // {
   //   btnText: "Why Us?",
   //   heading: "Why eSkooly is the best school management software?",
-  //   details:'Besides, eSkooly is a completely free online school management software, it has more school management features than any other online school management system in the market. It does not end here, eSkooly is still enhancing features. You will be automatically updated as a new feature will be a part of our free school management software. Some main school management features are given below.',
-  //   src:"/imgs/whyUs/desktop.png",
-  //   width:"23.063rem",
-  //   height:"18.75rem",
-  //   display:"none",
-  //   direction:"row",
-  //   direction:"row-reverse"
-  //  },
+  //   details:
+  //     "Besides, eSkooly is a completely free online school management software, it has more school management features than any other online school management system in the market. It does not end here, eSkooly is still enhancing features. You will be automatically updated as a new feature will be a part of our free school management software. Some main school management features are given below.",
+  //   src: "/imgs/whyUs/desktop.png",
+  //   width: "23.063rem",
+  //   height: "18.75rem",
+  //   display: "none",
+  //   direction: "row",
+  // },
+  // {
+  //   btnText: "Manage Roles",
+  //   heading: "Seperate Portals Available",
+  //   details:
+  //     "our school management system comes with a separate portal for every user role. An admin portal with full controls, separate portals for Management staff, Accountant, Teachers, Parents, and Students.",
+  //   src: "/imgs/whyUs/full-team.png",
+  //   width: "35.375rem",
+  //   height: "23.313rem",
+  //   display: "none",
+  //   direction: "column",
+  // },
   {
     btnText: "Message System",
     heading: "Messaging and file sharing system",
@@ -281,8 +355,8 @@ export const facilitiesData = [
       "Send unlimited free SMS alerts on mobile numbers with our 100% free SMS gateway application. Now no need to buy expensive branded SMS to send alerts on mobile phones.",
     src: "/imgs/whyUs/smsAlert.png",
     iconBtnText: "Download SMS Gateway",
-    width: "31rem",
-    height: "20rem",
+    width: "28rem",
+    height: "19rem",
     display: "block",
     direction: "row-reverse",
   },
@@ -334,4 +408,90 @@ export const facilitiesData = [
     display: "block",
     direction: "row-reverse",
   },
+];
+
+// TrustBox Home Page
+export const trustBoxData = [
+  {
+    borderBottom: true,
+  },
+  {
+    src: "/imgs/trust/c1.png",
+    borderRight: true,
+    borderBottom: true,
+  },
+  {
+    src: "/imgs/trust/c2.png",
+    borderRight: true,
+    borderBottom: true,
+  },
+  {
+    src: "/imgs/trust/c3.png",
+    borderRight: true,
+    borderBottom: true,
+  },
+  {
+    src: "/imgs/trust/c4.png",
+    borderRight: true,
+    borderBottom: true,
+  },
+  {
+    src: "/imgs/trust/c5.png",
+    borderBottom: true,
+  },
+  {
+    borderBottom: true,
+  },
+  {
+    borderBottom: true,
+  },
+  {
+    src: "/imgs/trust/c7.png",
+    borderRight: true,
+    borderBottom: true,
+  },
+  {
+    src: "/imgs/trust/c8.png",
+    borderRight: true,
+    borderBottom: true,
+  },
+  {
+    src: "/imgs/trust/c9.png",
+    borderRight: true,
+    borderBottom: true,
+  },
+  {
+    src: "/imgs/trust/c10.png",
+    borderRight: true,
+    borderBottom: true,
+  },
+  {
+    src: "/imgs/trust/c11.png",
+
+    borderBottom: true,
+  },
+  {
+    borderBottom: true,
+  },
+  {},
+  {
+    src: "/imgs/trust/c12.png",
+    borderRight: true,
+  },
+  {
+    src: "/imgs/trust/c13.png",
+    borderRight: true,
+  },
+  {
+    src: "/imgs/trust/c14.png",
+    borderRight: true,
+  },
+  {
+    src: "/imgs/trust/c2.png",
+    borderRight: true,
+  },
+  {
+    src: "/imgs/trust/c16.png",
+  },
+  {},
 ];

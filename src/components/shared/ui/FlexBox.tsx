@@ -5,6 +5,14 @@ import { flexboxAttributes } from "../../../../Type";
 
 export default function Box(props: flexboxAttributes) {
   const FlexBox = styled.div`
+    border-left: ${props.borderLeft};
+    border-right: ${props.borderRigth};
+    border-top: ${props.borderTop};
+    border-bottom: ${props.borderBottom};
+    background-size: ${props.backgroundSize};
+    background-repeat: ${props.backgroundRepeat};
+    background-image: url(${props.backgroundImgURL});
+    position: ${props.position};
     padding: ${props.padding};
     background: ${props.background};
     width: ${props.width};

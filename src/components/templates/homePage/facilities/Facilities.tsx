@@ -1,15 +1,15 @@
 import Box from "@/components/shared/ui/FlexBox";
 import React from "react";
-import Monitoring from "./monitoring/Monitoring";
 import Portals from "./portals/Portals";
-import Message from "./message/Message";
+import FacilitiesComp from "./FacilitiesComp";
+import WhyUs from "./whyUs/WhyUs";
 
-export default function WhyUsPage() {
+export default function Facilities() {
   return (
     <>
       <Box
-      padding="5rem 1rem"
-     background="linear-gradient(to right,#09327f, #06183b)"
+        padding="5rem 1rem"
+        background=" linear-gradient(to left, #09327f, #06183b)"
         display="flex"
         flexDirection="column"
         justifyContent="center"
@@ -17,9 +17,9 @@ export default function WhyUsPage() {
         rowGap="3rem"
         width="100vw"
       >
-        <Monitoring />
+        <WhyUs/>
         <Portals />
-        <Message/>
+        <FacilitiesComp />
       </Box>
     </>
   );

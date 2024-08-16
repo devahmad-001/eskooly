@@ -31,13 +31,13 @@ export default function ManagementDeskcription() {
             fontWeight="600"
             fontFamily={`Nexa Bold, sans-serif`}
             fontSize="1.7rem"
-            color="#fff"
+            color="--white"
             lineHeight="2rem"
             padding="0rem 3rem 0rem 0rem"
           />
           <ParaGraph
             fontWeight="500"
-            color="#fff"
+            color="--white"
             textAlign="start"
             fontSize="0.82rem"
             lineHeight="1.3rem"
@@ -87,13 +87,13 @@ export default function ManagementDeskcription() {
               justifyContent="center"
               textAlign="center"
               whiteSpace="nowrap"
-              textDecoration=" none solid rgb(255, 255, 255)"
+              textDecoration="none solid rgb(255, 255, 255)"
               boxSizing="border-box"
               appearance="none"
               fontSize="0.813rem"
               height="2.9rem"
               alignItems="center"
-              display="inline-flex"
+              displayflex="inline-flex"
               lineHeight="1.313rem"
               position="relative"
               verticalAlign="top"
@@ -112,7 +112,7 @@ export default function ManagementDeskcription() {
             />
             <ParaGraph
               fontWeight="500"
-              color="#fff"
+              color="--white"
               textAlign="start"
               fontSize="0.82rem"
               lineHeight="1.3rem"

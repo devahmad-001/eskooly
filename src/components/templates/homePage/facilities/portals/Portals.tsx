@@ -25,7 +25,8 @@ export default function Portals() {
           flexDirection="column"
         >
           <Button
-            background="linear-gradient(45deg, #0f5ef7, #0f5ef7) !important"
+            color="--white"
+            background="--gradient-lightblue"
             text="Manage User Roles"
             padding="0 0.6rem"
             lineHeight="2"
@@ -33,6 +34,7 @@ export default function Portals() {
             fontSize="1.1rem"
             borderRadius="2px"
             maxWidth="12rem"
+            cursor="text"
           />
           <Heading
             textAlign="start"
@@ -40,13 +42,13 @@ export default function Portals() {
             fontWeight="600"
             fontFamily={`Nexa Bold, sans-serif`}
             fontSize="1.6rem"
-            color="#fff"
+            color="--white"
             lineHeight="normal"
           />
           <ParaGraph
             lineHeight="1.5"
             fontWeight="500"
-            color="#fff"
+            color="--white"
             textAlign="-webkit-center"
             fontSize="0.8rem"
             text="our school management system comes with a separate portal for every user role. An admin portal with full controls, separate portals for Management staff, Accountant, Teachers, Parents, and Students."

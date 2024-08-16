@@ -18,16 +18,17 @@ export default function SchoolDescription() {
         {features.schoolFeatures.map((obj, index) => {
           return (
             <Box
-              width="40vw"
+              width="32rem"
               display="flex"
               flexDirection={obj.direction}
               justifyContent="space-between"
               alignItems="center"
               key={index}
             >
-              <Box width="30vw">
+              <Box width="24rem">
                 <Heading
                   text={obj.heading}
+                  color="--white"
                   textAlign="center"
                   fontSize="1.7rem"
                   fontWeight="600"
@@ -35,9 +36,10 @@ export default function SchoolDescription() {
                   fontFamily={`Nexa Bold, sans-serif`}
                 />
                 <ParaGraph
+                  text={obj.para}
+                  color="--white"
                   textAlign="center"
                   fontSize="0.9rem"
-                  text={obj.para}
                 />
               </Box>
               <Image alt="" width={100} height={100} src={obj.gif} />

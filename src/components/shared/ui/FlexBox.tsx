@@ -12,12 +12,12 @@ export default function Box(props: flexboxAttributes) {
     background-size: ${props.backgroundSize};
     background-repeat: ${props.backgroundRepeat};
     background-image: url(${props.backgroundImgURL});
+    background-color: var(${props.backgroundColor});
+    background: var(${props.background});
     position: ${props.position};
     padding: ${props.padding};
-    background: ${props.background};
     width: ${props.width};
     height: ${props.height};
-    background-color: ${props.backgroundColor};
     column-gap: ${props.columnGap};
     row-gap: ${props.rowGap};
     display: ${props.display};

@@ -9,15 +9,15 @@ export default function Facilities() {
     <>
       <Box
         padding="5rem 1rem"
-        background=" linear-gradient(to left, #09327f, #06183b)"
+        background="--gradient-darkblue"
         display="flex"
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
         rowGap="3rem"
-        width="100vw"
+        // width="100vw"
       >
-        <WhyUs/>
+        <WhyUs />
         <Portals />
         <FacilitiesComp />
       </Box>

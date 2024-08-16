@@ -11,14 +11,14 @@ export default function ParaGraph(props: paraGraphAttributes) {
     font-family: ${props.fontFamily};
     font-weight: ${props.fontWeight};
     font-size: ${props.fontSize};
-    background: ${props.background};
+    background: var(${props.background});
     margin: ${props.margin};
     padding: ${props.padding};
     width: ${props.width};
     min-width: ${props.minWidth};
     height: ${props.height};
-    background-color: ${props.backgroundColor};
-    color: ${props.color};
+    background-color: var(${props.backgroundColor});
+    color: var(${props.color});
     line-height: ${props.lineHeight};
     vertical-align: ${props.verticalAlign};
   `;

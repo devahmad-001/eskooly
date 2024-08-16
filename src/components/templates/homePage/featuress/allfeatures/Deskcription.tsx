@@ -18,7 +18,6 @@ export default function AllFeaturesDeskcription() {
         {features.allFeatures.map((obj, index) => {
           return (
             <Box
-              height="15rem"
               width="17rem"
               display="flex"
               flexDirection="column"
@@ -29,6 +28,7 @@ export default function AllFeaturesDeskcription() {
               <Image alt="" width={75} height={75} src={obj.src} />
               <Box width="100%">
                 <Heading
+                  color="--white"
                   text={obj.heading}
                   textAlign="center"
                   fontSize="1.7rem"
@@ -37,6 +37,7 @@ export default function AllFeaturesDeskcription() {
                   fontFamily={`Nexa Bold, sans-serif`}
                 />
                 <ParaGraph
+                  color="--white"
                   lineHeight="1.3rem"
                   textAlign="center"
                   fontSize="0.78rem"

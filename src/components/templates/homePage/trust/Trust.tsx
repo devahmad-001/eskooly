@@ -69,7 +69,7 @@ export default function Trust() {
           fontSize="0.813rem"
           height="2.9rem"
           alignItems="center"
-          display="inline-flex"
+          displayflex="inline-flex"
           lineHeight="1.313rem"
           position="relative"
           verticalAlign="top"

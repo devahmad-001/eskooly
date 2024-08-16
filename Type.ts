@@ -1,8 +1,9 @@
-////////////////   Html    ///////////////
+////////////////   Html   Tags   ///////////////
 
 // Import ReactNode for the childeren
 import { ReactNode } from "react";
 export type flexboxAttributes = {
+  gradient?: boolean;
   borderRigth?: string;
   borderLeft?: string;
   borderTop?: string;
@@ -36,6 +37,7 @@ export type flexboxAttributes = {
   children?: ReactNode;
 };
 export type inputAttributes = {
+  onClick?: () => void;
   type?: string;
   placeholder?: string;
   required?: true;
@@ -65,14 +67,56 @@ export type inputAttributes = {
   verticalAlign?: string;
 };
 export type spanAttributes = {
+  float?: string;
+  overflow?: string;
+  letterSpacing?: string;
+  left?: string;
+  top?: string;
+  transform?: string;
+  maxWidth?: string;
+  text: string;
+  cursor?: string;
+  display?: string;
+  postion?: string;
+  type?: string;
+  onClick?: () => void;
+  disabled?: boolean;
+  className?: string;
+  heading?: string;
+  TextDecoration?: string;
+  textAlign?: string;
+  fontFamily?: string;
+  fontWeight?: string;
+  fontSize?: string;
+  background?: string;
+  borderRadius?: string;
+  borderWidth?: string;
+  borderColor?: string;
+  border?: string;
+  boxShadow?: string;
+  boxSizing?: string;
+  margin?: string;
+  padding?: string;
+  width?: string;
+  minWidth?: string;
+  height?: string;
+  backgroundColor?: string;
+  color?: string;
+  hoverBackgroundColor?: string;
+  hoverColor?: string;
+  hoverBorder?: string;
+  transition?: string;
   lineHeight?: string;
-  position: string;
-  left: string;
-  top: string;
-  transform: string;
-  color: string;
+  position?: string;
+  verticalAlign?: string;
+  outline?: string;
+  justifyContent?: string;
+  whitespace?: string;
+  appearance?: string;
+  userselect?: string;
 };
 export type btnAttributes = {
+  outLine?: string;
   maxWidth?: string;
   text: string;
   cursor?: string;
@@ -185,7 +229,8 @@ export type iconbutton = {
   borderRadius?: string;
   backgroundColor?: string;
   color?: string;
-  display?: string;
+  displaybtn?: string;
+  displayflex?: string;
   textAlign?: string;
   borderColor?: string;
   borderStyle?: string;

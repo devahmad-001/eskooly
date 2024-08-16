@@ -3,11 +3,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
-const World = dynamic(() => import("./Globe").then((m) => m.World), {
+const World = dynamic(() => import("./GlobeQueries").then((m) => m.World), {
   ssr: false,
 });
 
-export function Globe() {
+export function GlobeCanvas() {
   const globeConfig = {
     pointSize: 4,
     globeColor: "#062056",
@@ -394,7 +394,7 @@ export function Globe() {
     },
   ];
   return (
-    <div className="flex flex-row items-center justify-center pt-20 h-screen md:h-auto dark:bg-black  relative w-full">
+    <div className="flex flex-row items-center bg-bottom justify-center pt-20 h-screen md:h-auto dark:bg-black  relative w-full">
       <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
         <motion.div
           initial={{
@@ -410,10 +410,10 @@ export function Globe() {
           }}
           className="div"
         >
-          <h2 className="text-center text-xl md:text-4xl font-bold text-black ">
+          <h2 className="text-center text-xl md:text-4xl font-bold text-white ">
           Free Online School Management Software.
           </h2>
-          <div className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
+          <div className="text-center text-base md:text-lg font-normal text-white dark:text-neutral-200 max-w-md mt-2 mx-auto">
           Now you can manage your school, college, or any  educational center with eSkooly. It&apos;s 100% free for a lifetime with no limitations.
           </div>
         </motion.div>

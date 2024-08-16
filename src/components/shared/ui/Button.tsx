@@ -16,10 +16,10 @@ export default function Button(props: btnAttributes) {
     padding: ${props.padding};
     line-height: ${props.lineHeight};
     transition: ${props.transition};
-    color: ${props.color};
-    background: ${props.background};
-    background-color: ${props.backgroundColor};
-    border-color: ${props.borderColor};
+    color: var(${props.color});
+    background: var(${props.background});
+    background-color: var(${props.backgroundColor});
+    border-color: var(${props.borderColor});
     border-width: ${props.borderWidth};
     cursor: ${props.cursor};
     font-family: ${props.fontFamily};
@@ -30,7 +30,7 @@ export default function Button(props: btnAttributes) {
     position: ${props.position};
     :hover {
       transition: ${props.transition};
-      background-color: ${props.hoverBackgroundColor};
+      background-color: var(${props.hoverBackgroundColor});
     }
   `;
   return (

@@ -6,18 +6,19 @@ import { MdPersonAddAlt } from "react-icons/md";
 
 export default function IconBtn(props: iconbutton) {
   const Box = styled.a`
+  outline: var(${props.outLine});
     max-width: ${props.maxWidth};
     height: ${props.height};
     border: ${props.border};
     box-shadow: ${props.boxShadow};
     outline: ${props.outLine};
-    border-color: ${props.borderColor};
+    border-color: var(${props.borderColor});
     opacity: ${props.opacity};
     border-radius: ${props.borderRadius};
     padding: ${props.padding};
-    color: ${props.color};
+    color: var(${props.color});
     background: ${props.background};
-    background-color: ${props.backgroundColor};
+    background-color: var(${props.backgroundColor});
     border-width: ${props.borderWidth};
     cursor: ${props.cursor};
     justify-content: ${props.justifyContent};
@@ -27,7 +28,7 @@ export default function IconBtn(props: iconbutton) {
     box-sizing: ${props.boxSizing};
     appearance: ${props.appearance};
     align-items: ${props.alignItems};
-    display: ${props.display};
+    display: ${props.displayflex};
     font-size: ${props.fontSize};
     height: ${props.heigth};
     line-height: ${props.lineHeight};
@@ -35,11 +36,11 @@ export default function IconBtn(props: iconbutton) {
     vertical-align: ${props.verticalAlign};
     user-select: ${props.userSelect};
     transition: ${props.transition}; /* Apply transition to all properties */
-
+    border-color: var(${props.borderColor});
     :hover {
-      background: ${props.hoverBackground}; /* Change background gradient on hover */
-      box-shadow: ${props.boxShadow}; /* Change shadow on hover */
-      opacity: ${props.opacity};
+      background: var(${props.hoverBackground}); /* Change background gradient on hover */
+      box-shadow: var(${props.boxShadow}); /* Change shadow on hover */
+      opacity:var( ${props.opacity});
     }
   `;
 
@@ -61,7 +62,6 @@ export default function IconBtn(props: iconbutton) {
     <>
       <Box>
         <Info>
-          {/* {props.icon && React.createElement(props.icon, { style: { width: "20px", height: "30px" } })} */}
           <MdPersonAddAlt style={{ width: "20px", height: "30px" }} />
         </Info>{" "}
         {props.text}

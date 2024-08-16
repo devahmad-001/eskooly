@@ -8,13 +8,13 @@ export default function Monitoring() {
   return (
     <>
       <Box
+        // width="100%"
+        // height="100%"
         display="flex"
         columnGap="10vw"
-        width="100%"
         justifyContent="center"
         flexDirection="row"
         alignItems="center"
-        height="100%"
       >
         <Box
           justifyContent="flex-start"
@@ -24,7 +24,9 @@ export default function Monitoring() {
           flexDirection="column"
         >
           <Button
-            background="linear-gradient(45deg, #0f5ef7, #0f5ef7) !important"
+            cursor="text"
+            color="--white"
+            background="--gradient-lightblue"
             text="Why Us?"
             padding="0 0.6rem"
             lineHeight="2"
@@ -39,12 +41,12 @@ export default function Monitoring() {
             fontWeight="600"
             fontFamily={`Nexa Bold, sans-serif`}
             fontSize="1.6rem"
-            color="#fff"
+            color="--white"
             lineHeight="normal"
           />
           <ParaGraph
             fontWeight="500"
-            color="#fff"
+            color="--white"
             textAlign="start"
             fontSize="0.8rem"
             text="Besides, eSkooly is a completely free online school management software, it has more school management features than any other online school management system in the market. It does not end here, eSkooly is still enhancing features. You will be automatically updated as a new feature will be a part of our free school management software. Some main school management features are given below."

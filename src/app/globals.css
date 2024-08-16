@@ -330,8 +330,6 @@
   box-sizing: border-box;
 }
 
-
-
 .style-31 {
   left: 0px;
   color: rgb(219, 219, 219);
@@ -362,7 +360,6 @@
   font-variant: normal;
   box-sizing: border-box;
 }
-
 
 .style-36 {
   left: 0px;
@@ -695,16 +692,16 @@
   padding: 10px;
 }
 @media screen and (max-width: 798px) {
-  .register-section{
+  .register-section {
     display: none;
   }
-  .style-0{
+  .style-0 {
     width: 100vw;
   }
-  .style-11{
+  .style-11 {
     justify-content: center;
   }
-  .style-12{
+  .style-12 {
     margin-left: 0;
   }
 }
@@ -716,17 +713,16 @@
   align-self: flex-end;
   margin-right: 10px;
 }
-.register-section > .btnBox>button{
+.register-section > .btnBox > button {
   min-width: 80px;
   padding: 4px 16px 4px 16px;
-  background-color:rgb(15, 94, 247);
+  background-color: rgb(15, 94, 247);
   border-radius: 61px;
   font-size: medium;
 }
-.register-section>.btnBox>p{
+.register-section > .btnBox > p {
   padding-inline-end: 11px;
-    font-size: small;
-
+  font-size: small;
 }
 
 .register-section > h1 {
@@ -782,8 +778,28 @@
 }
 
 /* ////////////////////// */
-
-body{
-  background:linear-gradient(to right,#09327f, #06183b);
+:root {
+  --black-: black;
+  --white: white;
+  --light-Navyblue: #09327f;
+  --dark-Navyblue: #06183b;
+  --light-blue: #0f5ef7;
+  --light-pink:  rgb(247, 144, 153);
+  --dark-pink: rgb(255, 128, 139);
+  --gradient-darkblue: linear-gradient(
+    to left,
+    var(--light-Navyblue),
+    var(--dark-Navyblue)
+  );
+  --gradient-lightblue: linear-gradient(
+    45deg,
+    var(--light-blue),
+    var(--light-blue)
+  ) !important;
+  --gradient-lightpink: rgba(0, 0, 0, 0)
+  linear-gradient(45deg, rgb(255, 128, 139), rgb(247, 144, 153)) repeat
+   scroll 0% 0% / auto padding-box border-box;;
 }
-
+body {
+  background:var( --gradient-darkblue);
+}

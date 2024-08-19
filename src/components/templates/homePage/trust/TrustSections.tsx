@@ -10,8 +10,11 @@ export default function Sections() {
         display="flex"
         flexWrap="wrap"
         padding="3rem 7rem "
+        padding_Sm="2rem"
+        flexDirection_Sm="column"
         justifyContent="center"
         alignItems="center"
+        rowGap_Sm="2rem"
       >
         {trustBoxData.map((obj, index) => {
           return (
@@ -21,11 +24,14 @@ export default function Sections() {
               justifyContent="center"
               key={index}
               borderRigth={obj.borderRight ? "1px solid white" : "none"}
-              width="10rem"
-              height="7rem"
+              maxWidth="10rem"
+              maxHeight="7rem"
               borderBottom={obj.borderBottom ? "2px solid white" : "none"}
+              borderRigth_Sm="none"
+              
+              
             >
-              {obj.src && <Img src={obj.src} width="7rem" height="2rem" />}
+              {obj.src && <Img src={obj.src} minWidth="8rem" minHeight="4rem" />}
             </Box>
           );
         })}

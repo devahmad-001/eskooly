@@ -18,6 +18,7 @@ export default function Allfeatures() {
         backgroundColor=" --dark-Navyblue"
         backgroundSize="cover"
         backgroundRepeat="no-repeat"
+        padding_Sm="1.5rem 0rem"
       >
         <Box>
           <ParaGraph
@@ -35,6 +36,7 @@ export default function Allfeatures() {
             fontSize="2.3rem"
             color="--white"
             lineHeight="2.125rem"
+            fontSize_Sm="1.4rem"
           />
         </Box>
         {/* Desckcription */}

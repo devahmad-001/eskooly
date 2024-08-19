@@ -25,26 +25,23 @@ export default function Trust() {
           fontSize="0.82rem"
           lineHeight="1.3rem"
         />
-        <Box display="flex" justifyContent="center" alignContent="center">
-          <ParaGraph
-            text="45K+ Schools"
-            fontWeight="500"
-            color="#fff"
-            textAlign="start"
-            fontSize="0.82rem"
-            lineHeight="1.3rem"
-          />
-          <ParaGraph
-            text="use our product."
-            fontWeight="500"
-            color="#fff"
-            textAlign="start"
-            fontSize="0.82rem"
-            lineHeight="1.3rem"
-          />
-        </Box>
-        <Heading />
+
+        <ParaGraph
+          text={
+            <>
+              <b>45K+ Schools </b>
+              use our product.
+            </>
+          }
+          fontWeight="500"
+          color="#fff"
+          textAlign="start"
+          fontSize="1rem"
+          lineHeight="1.3rem"
+        />
+        {/* Brand Sections */}
         <Sections />
+        {/*Get started Now button */}
         <IconBtn
           text="Get started Now "
           maxWidth="12rem"

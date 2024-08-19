@@ -1,4 +1,3 @@
-import Button from "@/components/shared/ui/Button";
 import Box from "@/components/shared/ui/FlexBox";
 import Heading from "@/components/shared/ui/Heading";
 import IconBtn from "@/components/shared/ui/IconBtn";
@@ -9,38 +8,52 @@ import React from "react";
 export default function ManagementDeskcription() {
   return (
     <>
+      {/* Container */}
       <Box
         display="flex"
         columnGap="7rem"
-        width="100%"
+        rowGap_Sm="4rem"
+        rowGap_Md="4rem"
+        rowGap_Lg="4rem"
         justifyContent="center"
         flexDirection="row"
+        flexDirection_Md="column"
+        flexDirection_Lg="column"
+        flexDirection_Sm="column"
         alignItems="center"
         padding="5rem 0rem"
+        padding_Sm=" 4rem 3rem"
+        
+
+        
       >
+        {/* Text Section  */}
         <Box
           justifyContent="flex-start"
           display="flex"
           rowGap="1rem"
-          width="31.5rem"
+          rowGap_Sm="0.5rem"
+          maxWidth="31.5rem"
+          minWidth="13rem"
           flexDirection="column"
+
         >
           <Heading
-            textAlign="start"
             text="Single Stop Solution For School Management"
+            textAlign="start"
             fontWeight="600"
             fontFamily={`Nexa Bold, sans-serif`}
             fontSize="1.7rem"
+            fontSize_Sm="1.1rem"
             color="--white"
             lineHeight="2rem"
             padding="0rem 3rem 0rem 0rem"
+            fontSize_Md="1.7rem"
+            fontSize_Lg="1.7rem"
+            padding_Sm="0"
+            lineHeight_Sm="1.4rem"
           />
           <ParaGraph
-            fontWeight="500"
-            color="--white"
-            textAlign="start"
-            fontSize="0.82rem"
-            lineHeight="1.3rem"
             text={
               <>
                 Managing any educational institute is not a piece of cake.
@@ -68,6 +81,18 @@ export default function ManagementDeskcription() {
                 can use eskooly.
               </>
             }
+            fontWeight_Sm="600"
+            fontWeight_Md=""
+            fontWeight_Lg=""
+            fontSize_Sm="0.74rem"
+            textAlign_Sm="justify"
+            fontSize_Md=""
+            fontSize_Lg=""
+            fontWeight="500"
+            color="--white"
+            textAlign="start"
+            fontSize="0.82rem"
+            lineHeight="1.3rem"
           />
           {/* btn box  */}
           <Box
@@ -75,6 +100,7 @@ export default function ManagementDeskcription() {
             alignItems="center"
             justifyContent="space-arround"
             columnGap="2rem"
+            width="100%"
           >
             <IconBtn
               maxWidth="12rem"
@@ -111,16 +137,29 @@ export default function ManagementDeskcription() {
               border="2px solid white"
             />
             <ParaGraph
+              text="Right Now "
               fontWeight="500"
               color="--white"
               textAlign="start"
               fontSize="0.82rem"
               lineHeight="1.3rem"
-              text="Right Now "
+              fontSize_Sm="0.7rem"
+              fontSize_Md=""
+              fontSize_Lg=""
             />
           </Box>
         </Box>
-        <Img height="25rem" width="30rem" src="/imgs/whyUs/desktop.png" />
+        {/* Img */}
+        <Img
+          maxHeight="25rem"
+          minHeight="10rem"
+          maxWidth="30rem"
+          minWidth="15rem"
+          width_Lg="100%"
+          width_Sm="70%"
+          width_Md="60%"
+          src="/imgs/whyUs/desktop.png"
+        />
       </Box>
     </>
   );

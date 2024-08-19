@@ -14,8 +14,8 @@ export default function Home() {
       {/* <SchoolFeatures /> */}
       {/* <Facilities /> */}
       {/* <Allfeatures /> */}
-      <Management />
-      {/* <Trust/> */}
+      {/* <Management /> */}
+      <Trust/>
     </>
   );
 }

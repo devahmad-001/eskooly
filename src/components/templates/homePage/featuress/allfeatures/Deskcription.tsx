@@ -14,11 +14,12 @@ export default function AllFeaturesDeskcription() {
         justifyContent="center"
         rowGap="2rem"
         alignItems="center"
+        padding_Sm="1.5rem 1.5rem"
       >
         {features.allFeatures.map((obj, index) => {
           return (
             <Box
-              width="17rem"
+              maxWidth="17rem"
               display="flex"
               flexDirection="column"
               justifyContent="space-arround"
@@ -35,6 +36,7 @@ export default function AllFeaturesDeskcription() {
                   fontWeight="600"
                   padding="0.7rem 0rem"
                   fontFamily={`Nexa Bold, sans-serif`}
+                  padding_Sm="0.3rem 0rem"
                 />
                 <ParaGraph
                   color="--white"

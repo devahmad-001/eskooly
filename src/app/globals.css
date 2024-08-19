@@ -800,6 +800,6 @@
   linear-gradient(45deg, rgb(255, 128, 139), rgb(247, 144, 153)) repeat
    scroll 0% 0% / auto padding-box border-box;;
 }
-body {
+/* body {
   background:var( --gradient-darkblue);
-}
+} */

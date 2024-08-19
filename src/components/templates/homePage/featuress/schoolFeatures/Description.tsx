@@ -14,18 +14,25 @@ export default function SchoolDescription() {
         justifyContent="center"
         rowGap="4rem"
         alignItems="center"
+        padding_Sm="2rem"
+        rowGap_Sm="2rem"
+
       >
         {features.schoolFeatures.map((obj, index) => {
           return (
             <Box
-              width="32rem"
+              maxWidth_Md="20rem"
+              maxWidth="32rem"
               display="flex"
               flexDirection={obj.direction}
+              flexDirection_Md="column-reverse"
+              flexDirection_Sm="column-reverse"
+              // maxWidth_Sm="28rem"
               justifyContent="space-between"
               alignItems="center"
               key={index}
             >
-              <Box width="24rem">
+              <Box maxWidth="24rem"  >
                 <Heading
                   text={obj.heading}
                   color="--white"
@@ -34,12 +41,15 @@ export default function SchoolDescription() {
                   fontWeight="600"
                   padding="0.7rem 0rem"
                   fontFamily={`Nexa Bold, sans-serif`}
+                  fontSize_Sm="1.3rem"
                 />
                 <ParaGraph
                   text={obj.para}
                   color="--white"
                   textAlign="center"
                   fontSize="0.9rem"
+                  fontSize_Sm="0.6"
+                  textAlign_Sm="center"
                 />
               </Box>
               <Image alt="" width={100} height={100} src={obj.gif} />

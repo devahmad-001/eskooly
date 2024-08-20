@@ -1,3 +1,5 @@
+import Nav from "@/components/shared/nav/Nav";
+import ContactUS from "@/components/templates/homePage/contactUs/ContactUS";
 import DropUs from "@/components/templates/homePage/dropUs/DropUs";
 import Facilities from "@/components/templates/homePage/facilities/Facilities";
 import Allfeatures from "@/components/templates/homePage/featuress/allfeatures/AllFeatures";
@@ -15,7 +17,9 @@ export default function Home() {
       {/* <Facilities /> */}
       {/* <Allfeatures /> */}
       {/* <Management /> */}
-      <Trust/>
+      {/* <Trust/> */}
+      <ContactUS/>
+      {/* <Nav/> */}
     </>
   );
 }

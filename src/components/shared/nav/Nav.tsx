@@ -3,137 +3,315 @@ import React from "react";
 import Button from "../ui/Button";
 import styled from "@emotion/styled";
 import Image from "next/image";
-import { GoPersonAdd } from "react-icons/go";
-const Navbar = styled.div`
-  background-image: linear-gradient(to right, #09327f, #06183b) !important;
-  background: #fff;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
-  width: 100%;
-  height: 4.6rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 20;
-  transition: all 0.4s;
-  @media screen and (min-width: 1024px) {
-    min-height: 3.25rem;
-  }
 
-  @media screen and (min-width: 1024px) {
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    display: -ms-flexbox;
-    display: flex;
-  }
-`;
-const Container = styled.div`
-  padding-inline: 5rem;
-  display: flex;
-  justify-content: space-between;
-  min-height: 3.25rem;
-  width: 100%;
-  outline: none !important;
-  @media screen and (min-width: 1024px) {
-    margin-left: -0.75rem;
-  }
-  margin-block: 0.8rem;
-`;
-const PicBox = styled.div`
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-`;
-const ContentBox = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-width: 66vw;
-  align-self: baseline;
-`;
-const TextBox = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 2rem;
-`;
-const BtnBox = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 10px;
-`;
-const Paragraph = styled.p`
-  font-size: medium;
-  font-weight: 300;
-  color: white;
-`;
 export default function Nav() {
   return (
     <>
-      {/* <Navbar>
-
-      </Navbar> */}
-      <Container>
-        <PicBox>
-          <Image width={100} height={55} alt="" src="/imgs/form/logoxx.png" />
-        </PicBox>
-        <ContentBox>
-          <TextBox>
-            <Paragraph>Products</Paragraph>
-            <Paragraph>Help</Paragraph>
-          </TextBox>
-          <BtnBox>
-            <Button
-            text="Sign Up"
-            hoverBackgroundColor="rgb(18, 70, 159)"
-              fontSize="medium"
-              outline=" rgb(255, 255, 255) none 0px"
-              borderRadius=" 500px"
-              padding="12px 40px"
-              transition="all 0.5s ease 0s"
-              background="rgba(0, 0, 0, 0) linear-gradient(45deg, rgb(38, 105, 239), rgb(15, 94, 247)) repeat scroll 0% 0% / auto padding-box border-box"
-              color=" rgb(255, 255, 255)"
-              backgroundColor="rgba(0, 0, 0, 0)"
-              minWidth="5rem"
-              borderColor="rgb(255, 255, 255)"
-              borderWidth="0px"
-              cursor=" pointer"
-              justifyContent="center"
-              textAlign="center"
-              whitespace="nowrap"
-              TextDecoration="none solid rgb(255, 255, 255)"
-              boxSizing="border-box"
-              lineHeight="21px"
-              position="relative"
-              verticalAlign="top"
-              userselect="none"
-            />
-            {/* <Button
-              text="Login"
-              fontSize="medium"
-              outline=" rgb(255, 255, 255) none 0px"
-              borderRadius=" 500px"
-              padding="12px 40px"
-              transition="all 0.5s ease 0s"
-              background="rgb(65 97 161)"
-              color=" black"
-              backgroundColor="rgba(0, 0, 0, 0)"
-              minWidth="5rem"
-              borderColor="rgb(255, 255, 255)"
-              borderWidth="0px"
-              cursor=" pointer"
-              justifyContent="center"
-              textAlign="center"
-              whitespace="nowrap"
-              boxSizing="border-box"
-              lineHeight="21px"
-              position="relative"
-              verticalAlign="top"
-              userselect="none"
-            /> */}
-          </BtnBox>
-        </ContentBox>
-      </Container>
+     <nav
+            className="navbar navbar-wrapper navbar-default navbar-fade is-transparent"
+            style={{
+              backgroundImage: "linear-gradient(to right, #09327f, #06183b)",
+            }}
+          >
+            <div className="container">
+              {/* Brand */}
+              <div className="navbar-brand">
+                <a href="https://eskooly.com">
+                  <img
+                    src="/images/logos/logoxx.png"
+                    alt="eSkooly Logo"
+                    style={{ height: "60px !important", padding: 8 }}
+                  />
+                </a>
+                {/* Responsive toggle */}
+                <div className="custom-burger" data-target>
+                  <a className="responsive-btn" href="javascript:void(0);">
+                    <span className="menu-toggle">
+                      <span className="icon-box-toggle">
+                        <span className="rotate">
+                          <i className="icon-line-top" />
+                          <i className="icon-line-center" />
+                          <i className="icon-line-bottom" />
+                        </span>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+                {/* /Responsive toggle */}
+              </div>
+              {/* Navbar menu */}
+              <div className="navbar-menu" style={{ paddingLeft: 130 }}>
+                {/* Navbar Start */}
+                <div className="navbar-start">
+                  <div className="navbar-item has-dropdown is-hoverable is-mega is-hidden-mobile">
+                    <div
+                      className="navbar-item m-white"
+                      style={{ cursor: "pointer" }}
+                    >
+                      Products
+                      <i
+                        className="im im-icon-Arrow-Down"
+                        style={{ margin: "5px 0px 0px 5px" }}
+                      />
+                    </div>
+                    <div
+                      className="navbar-dropdown is-megamenu animated prefadeInUp fadeInUp"
+                      data-style="width: 18rem;"
+                    >
+                      <div className="mega-inner">
+                        <div className="container">
+                          <div className="columns">
+                            <div className="column">
+                              <h2 className="title is-6 is-mega-menu-title">
+                                eSkooly for Desktop
+                              </h2>
+                              <a
+                                className="navbar-item is-flex"
+                                href="https://eskooly.com/bb/Desktop"
+                              >
+                                <i className="im im-icon-Windows-Microsoft" />
+                                <div className="navbar-content">
+                                  <p>
+                                    <small className="color-secondary">
+                                      Windows
+                                    </small>
+                                  </p>
+                                  <p>Download Now</p>
+                                </div>
+                              </a>
+                              <a
+                                className="navbar-item is-flex"
+                                href="https://eskooly.com/bb/Desktop"
+                              >
+                                <i className="im im-icon-iOS-Apple" />
+                                <div className="navbar-content">
+                                  <p>
+                                    <small className="color-secondary">
+                                      MacOS
+                                    </small>
+                                  </p>
+                                  <p>Download Now</p>
+                                </div>
+                              </a>
+                              <a
+                                className="navbar-item is-flex"
+                                href="https://eskooly.com/bb/Desktop"
+                              >
+                                <i className="im im-icon-Linux" />
+                                <div className="navbar-content">
+                                  <p>
+                                    <small className="color-secondary">
+                                      Linux
+                                    </small>
+                                  </p>
+                                  <p>Download Now</p>
+                                </div>
+                              </a>
+                            </div>
+                            <div className="column">
+                              <h2 className="title is-6 is-mega-menu-title">
+                                Mobile Apps
+                              </h2>
+                              <a
+                                className="navbar-item is-flex"
+                                href="https://play.google.com/store/apps/details?id=com.eskooly.app"
+                              >
+                                <i className="im im-icon-Google-Play" />
+                                <div className="navbar-content">
+                                  <p>
+                                    <small className="color-secondary">
+                                      Android
+                                    </small>
+                                  </p>
+                                  <p>Install Now</p>
+                                </div>
+                              </a>
+                              <a
+                                className="navbar-item is-flex"
+                                href="https://apps.apple.com/pk/app/eskooly/id6448073356"
+                              >
+                                <i className="im im-icon-Apple-Store" />
+                                <div className="navbar-content">
+                                  <p>
+                                    <small className="color-secondary">
+                                      IOS
+                                    </small>
+                                  </p>
+                                  <p>Install Now</p>
+                                </div>
+                              </a>
+                              <a
+                                className="navbar-item is-flex"
+                                href="app/eSkooly%20SMS%20Gateway.apk"
+                              >
+                                <i className="im im-icon-Mail-Outbox" />
+                                <div className="navbar-content">
+                                  <p>
+                                    <small className="color-secondary">
+                                      SMS Gateway App
+                                    </small>
+                                  </p>
+                                  <p>Download Now</p>
+                                </div>
+                              </a>
+                            </div>
+                            <div className="column">
+                              <h2 className="title is-6 is-mega-menu-title">
+                                More
+                              </h2>
+                              <a
+                                className="navbar-item is-flex"
+                                href="https://eskooly.com/bb/LiveClass"
+                              >
+                                <i className="im im-icon-Wifi-2" />
+                                <div className="navbar-content">
+                                  <p>
+                                    <small className="color-secondary">
+                                      Live Class
+                                    </small>
+                                  </p>
+                                  <p>Go Live</p>
+                                </div>
+                              </a>
+                              <a
+                                className="navbar-item is-flex"
+                                href="https://pro.eskooly.com"
+                              >
+                                <i className="im im-icon-Hipster-Men2" />
+                                <div className="navbar-content">
+                                  <p>
+                                    <small className="color-secondary">
+                                      eSkooly Pro
+                                    </small>
+                                  </p>
+                                  <p>Learn More</p>
+                                </div>
+                              </a>
+                              <a
+                                className="navbar-item is-flex"
+                                href="https://lms.eskooly.com"
+                              >
+                                <i className="im im-icon-Cloud" />
+                                <div className="navbar-content">
+                                  <p>
+                                    <small className="color-secondary">
+                                      eSkooly LMS
+                                    </small>
+                                  </p>
+                                  <p>Learn More</p>
+                                </div>
+                              </a>
+                            </div>
+                            <div className="column">
+                              <h2 className="title is-6 is-mega-menu-title">
+                                Get Started
+                              </h2>
+                              <p className="is-cta">
+                                We're world's <b>#1 ranked</b> Free, Powerful,
+                                and easy-to-use school software.
+                              </p>
+                              <p className="is-cta">
+                                <a
+                                  href="signup.html"
+                                  className="button btn-align mega-btn bg-m-blue7 m-white"
+                                >
+                                  Sign up
+                                </a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <hr className="navbar-divider" />
+                        <div className="navbar-item is-footer is-hidden-mobile">
+                          <div className="navbar-content">
+                            <div className="level is-mobile">
+                              <div className="level-left">
+                                <div className="level-item">
+                                  <strong>Follow us</strong>
+                                </div>
+                              </div>
+                              <div className="level-right">
+                                <div className="level-item">
+                                  <a
+                                    className="social-link"
+                                    href="https://www.twitter.com/eskooly/"
+                                  >
+                                    <i className="fa fa-twitter" />
+                                  </a>
+                                  <a
+                                    className="social-link"
+                                    href="http://www.facebook.com/eskooly/"
+                                  >
+                                    <i className="fa fa-facebook" />
+                                  </a>
+                                  <a
+                                    className="social-link"
+                                    href="https://g.page/r/CavgvScb5-o7EA0"
+                                  >
+                                    <i className="fa fa-google" />
+                                  </a>
+                                  <a
+                                    className="social-link"
+                                    href="https://www.youtube.com/channel/UCJ1A8Xa4u31H2o7wzEhimRg"
+                                  >
+                                    <i className="fa fa-youtube" />
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="menu-image is-hidden-mobile">
+                          <img src="/images/bg/shapes/megamenu-blue.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Navbar item --
+                      <a class="navbar-item is-slide" href="landing-v3-pricing.html" style="color:#fff;">
+                          Pricing
+                      </a>
+                      <!-- Navbar item */}
+                  <a
+                    className="navbar-item is-slide"
+                    href="#"
+                    style={{ color: "#fff" }}
+                  >
+                    Help
+                  </a>
+                  {/* Navbar item --
+                      <a class="navbar-item is-slide" href="landing-v3-login.html" style="color:#fff;">
+                          Login
+                      </a>
+							*/}
+                </div>
+                {/* Navbar end */}
+                <div className="navbar-end">
+                  {/* Signup button */}
+                  <div className="navbar-item">
+                    <a
+                      id="#signup-btn"
+                      href="signup.html"
+                      className="button button-cta bg-m-blue7 m-white is-bold btn-align rounded raised"
+                      style={{ border: "none" }}
+                    >
+                      <i className="im im-icon-Add-User" /> Sign Up
+                    </a>
+                  </div>
+                  <div className="navbar-item">
+                    <a
+                      id="#signup-btn"
+                      href="bb/dashboard.php"
+                      className="button button-cta bg-m-white m-dblue is-bold btn-align rounded raised"
+                      style={{ border: "none" }}
+                    >
+                      <i className="im im-icon-Key-Lock" /> Login
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
     </>
   );
 }

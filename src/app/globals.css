@@ -781,13 +781,13 @@
 :root {
   --black-: black;
   --white: white;
-  --light-Navyblue: #09327f;
+  --light-Navyblue:#09327f;
   --dark-Navyblue: #06183b;
   --light-blue: #0f5ef7;
-  --light-pink:  rgb(247, 144, 153);
+  --light-pink: rgb(247, 144, 153);
   --dark-pink: rgb(255, 128, 139);
   --gradient-darkblue: linear-gradient(
-    to left,
+    to right,
     var(--light-Navyblue),
     var(--dark-Navyblue)
   );
@@ -797,9 +797,9 @@
     var(--light-blue)
   ) !important;
   --gradient-lightpink: rgba(0, 0, 0, 0)
-  linear-gradient(45deg, rgb(255, 128, 139), rgb(247, 144, 153)) repeat
-   scroll 0% 0% / auto padding-box border-box;;
+    linear-gradient(45deg, rgb(255, 128, 139), rgb(247, 144, 153)) repeat scroll
+    0% 0% / auto padding-box border-box;
 }
-/* body {
+body {
   background:var( --gradient-darkblue);
-} */
+}

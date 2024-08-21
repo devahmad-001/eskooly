@@ -30,11 +30,14 @@ export default function Box(props: flexboxAttributes) {
     justify-content: ${props.justifyContent};
     gap: ${props.gap};
     align-self: ${props.alignSelf};
+    justify-self: ${props.justifySelf};
     flex-wrap: ${props.flexWrap};
     flex-grow: ${props.flexGrow};
     flex-shrink: ${props.flexShrink};
     flex-basis: ${props.flexBasis};
     order: ${props.order};
+    overflow: ${props.overflow};
+    margin: ${props.margin};
 
     @media screen and (max-width: 640px) {
       column-gap: ${props.columnGap_Sm};
@@ -42,6 +45,7 @@ export default function Box(props: flexboxAttributes) {
       max-width: ${props.maxWidth_Sm};
       min-height: ${props.minHeight_Sm};
       max-height: ${props.maxHeight_Sm};
+      margin: ${props.margin_Sm};
       border-left: ${props.borderLeft_Sm};
       border-right: ${props.borderRigth_Sm};
       border-top: ${props.borderTop_Sm};
@@ -68,6 +72,7 @@ export default function Box(props: flexboxAttributes) {
       flex-shrink: ${props.flexShrink_Sm};
       flex-basis: ${props.flexBasis_Sm};
       order: ${props.order_Sm};
+      overflow: ${props.overflow_Sm};
     }
 
     @media screen and (min-width: 641px) and (max-width: 800px) {
@@ -76,6 +81,7 @@ export default function Box(props: flexboxAttributes) {
       max-width: ${props.maxWidth_Md};
       min-height: ${props.minHeight_Md};
       max-height: ${props.maxHeight_Md};
+      margin: ${props.margin_Md};
       border-left: ${props.borderLeft_Md};
       border-right: ${props.borderRigth_Md};
       border-top: ${props.borderTop_Md};
@@ -102,6 +108,7 @@ export default function Box(props: flexboxAttributes) {
       flex-shrink: ${props.flexShrink_Md};
       flex-basis: ${props.flexBasis_Md};
       order: ${props.order_Md};
+      overflow: ${props.overflow_Md};
     }
 
     @media screen and (min-width: 801px) and (max-width: 1100px) {
@@ -110,6 +117,7 @@ export default function Box(props: flexboxAttributes) {
       max-width: ${props.maxWidth_Lg};
       min-height: ${props.minHeight_Lg};
       max-height: ${props.maxHeight_Lg};
+      margin: ${props.margin_Lg};
       border-left: ${props.borderLeft_Lg};
       border-right: ${props.borderRigth_Lg};
       border-top: ${props.borderTop_Lg};
@@ -136,6 +144,7 @@ export default function Box(props: flexboxAttributes) {
       flex-shrink: ${props.flexShrink_Lg};
       flex-basis: ${props.flexBasis_Lg};
       order: ${props.order_Lg};
+      overflow: ${props.overflow_Lg};
     }
   `;
   return (

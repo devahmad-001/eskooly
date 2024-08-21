@@ -69,22 +69,6 @@ export default function LoginForm() {
                 <div className="style-12">
                   {/* Sign up form */}
                   <form className="style-13">
-                    {/* <article className="style-14">
-                      <h4 className="style-15">
-                        <span className="style-16">
-                          This Email is already registered !
-                        </span>{" "}
-                        <span className="style-17" aria-label="delete" />
-                      </h4>
-                    </article>
-                    <article className="style-18">
-                      <h4 className="style-19">
-                        <span className="style-20">
-                          Your password does not matched !
-                        </span>{" "}
-                        <span className="style-21" aria-label="delete" />
-                      </h4>
-                    </article> */}
                     <div className="style-22">
                       <InputField placeholder="Your Email *" type="email" />
                       <InputField
@@ -95,40 +79,6 @@ export default function LoginForm() {
                         placeholder="Confirm Password *"
                         type="password"
                       />
-                      {/* <table className="style-38">
-                      <tbody className="style-39">
-                        <tr className="style-40">
-                          <td className="style-41">
-                            <div className="style-42">
-                              <input
-                                type="checkbox"
-                                defaultValue={1}
-                                name="c"
-                                required
-                                className="style-43"
-                              />{" "}
-                              <label
-                                htmlFor="checkboxThreeInput"
-                                className="style-44"
-                              />
-                            </div>
-                          </td>
-                          <td className="style-45">
-                            <h2 className="style-46">
-                              Accept our{" "}
-                              <b className="style-47">
-                                <a
-                                  href="terms&conditions.html"
-                                  className="style-48"
-                                >
-                                  Terms &amp; Conditions
-                                </a>
-                              </b>
-                            </h2>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table> */}
                       <P49>
                         <Button
                           text="Sipn Up"

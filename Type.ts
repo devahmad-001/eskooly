@@ -40,7 +40,9 @@ export type flexboxAttributes = {
   minHeight?: string;
   maxWidth?: string;
   maxHeight?: string;
-
+  overflow?: string;
+  justifySelf?: string;
+  margin?: string;
   // Media properties
 
   // Small screen
@@ -80,6 +82,9 @@ export type flexboxAttributes = {
   minHeight_Sm?: string;
   maxWidth_Sm?: string;
   maxHeight_Sm?: string;
+  overflow_Sm?: string;
+  justifySelf_Sm?: string;
+  margin_Sm?: string;
 
   // Medium screen
 
@@ -118,6 +123,9 @@ export type flexboxAttributes = {
   minHeight_Md?: string;
   maxWidth_Md?: string;
   maxHeight_Md?: string;
+  overflow_Md?: string;
+  justifySelf_Md?: string;
+  margin_Md?: string;
 
   // Large Screen
 
@@ -156,6 +164,9 @@ export type flexboxAttributes = {
   minHeight_Lg?: string;
   maxWidth_Lg?: string;
   maxHeight_Lg?: string;
+  overflow_Lg?: string;
+  justifySelf_Lg?: string;
+  margin_Lg?: string;
 };
 export type inputAttributes = {
   onClick?: () => void;
@@ -749,7 +760,8 @@ export type headingAttributes = {
 export type paraGraphAttributes = {
   onClick?: () => void;
   text?: string | ReactNode;
-
+  hoverBorderBottom?: string;
+  borderBottom?: string;
   postion?: string;
   type?: string;
   disabled?: boolean;
@@ -863,7 +875,9 @@ export type imgAttributes = {
   maxWidth?: string;
   minHeight?: string;
   maxHeight?: string;
-
+  padding?: string;
+  alignSelf?: string;
+  justSelf?: string;
   // Media properties
 
   // Small Screen
@@ -876,6 +890,9 @@ export type imgAttributes = {
   maxWidth_Sm?: string;
   minHeight_Sm?: string;
   maxHeight_Sm?: string;
+  padding_Sm?: string;
+  alignSelf_Sm?: string;
+  justSelf_Sm?: string;
 
   // Medium Screen
 
@@ -887,6 +904,9 @@ export type imgAttributes = {
   maxWidth_Md?: string;
   minHeight_Md?: string;
   maxHeight_Md?: string;
+  padding_Md?: string;
+  alignSelf_Md?: string;
+  justSelf_Md?: string;
 
   // Large Screen
 
@@ -898,7 +918,9 @@ export type imgAttributes = {
   maxWidth_Lg?: string;
   minHeight_Lg?: string;
   maxHeight_Lg?: string;
-
+  padding_Lg?: string;
+  alignSelf_Lg?: string;
+  justSelf_Lg?: string;
 };
 export type iconbutton = {
   text?: string;
@@ -1104,7 +1126,416 @@ export type iconbutton = {
   borderTop_Lg?: string;
   borderBottom_Lg?: string;
 };
+export type orderlistAttributes = {
+  text?: string;
+  children?: ReactNode;
+  onClick?: (event: Event) => void;
 
+  maxWidth?: string;
+  width?: string;
+  heigth?: string;
+  border?: string;
+  borderRadius?: string;
+  backgroundColor?: string;
+  color?: string;
+  displaybtn?: string;
+  displayflex?: string;
+  textAlign?: string;
+  borderColor?: string;
+  borderStyle?: string;
+  boxShadow?: string;
+  outLine?: string;
+  margin?: string;
+  padding?: string;
+  fontFamily?: string;
+  fontWeight?: string;
+  fontSize?: string;
+  lineHeight?: string;
+  position?: string;
+  verticalAlign?: string;
+  justifyContent?: string;
+  alignItems?: string;
+  overflow?: string;
+  opacity?: string;
+  cursor?: string;
+  whiteSpace?: string;
+  textDecoration?: string;
+  boxSizing?: string;
+  appearance?: string;
+  userSelect?: string;
+  icon?: string;
+  hoverBackgroundColor?: string;
+  hoverBackground?: string;
+  hoverColor?: string;
+  hoverBorder?: string;
+  hoverOpacity?: string;
+  transition?: string;
+  borderWidth?: string;
+  hoverBoxShadow?: string;
+  background?: string;
+  height?: string;
+  borderRigth?: string;
+  borderLeft?: string;
+  borderTop?: string;
+  borderBottom?: string;
+
+  // Media properties
+
+  // Small Screen
+
+  maxWidth_Sm?: string;
+  width_Sm?: string;
+  heigth_Sm?: string;
+  border_Sm?: string;
+  borderRadius_Sm?: string;
+  backgroundColor_Sm?: string;
+  color_Sm?: string;
+  displaybtn_Sm?: string;
+  displayflex_Sm?: string;
+  textAlign_Sm?: string;
+  borderColor_Sm?: string;
+  borderStyle_Sm?: string;
+  boxShadow_Sm?: string;
+  outLine_Sm?: string;
+  margin_Sm?: string;
+  padding_Sm?: string;
+  fontFamily_Sm?: string;
+  fontWeight_Sm?: string;
+  fontSize_Sm?: string;
+  lineHeight_Sm?: string;
+  position_Sm?: string;
+  verticalAlign_Sm?: string;
+  justifyContent_Sm?: string;
+  alignItems_Sm?: string;
+  overflow_Sm?: string;
+  opacity_Sm?: string;
+  cursor_Sm?: string;
+  whiteSpace_Sm?: string;
+  textDecoration_Sm?: string;
+  boxSizing_Sm?: string;
+  appearance_Sm?: string;
+  userSelect_Sm?: string;
+  icon_Sm?: string;
+  hoverBackgroundColor_Sm?: string;
+  hoverBackground_Sm?: string;
+  hoverColor_Sm?: string;
+  hoverBorder_Sm?: string;
+  hoverOpacity_Sm?: string;
+  transition_Sm?: string;
+  borderWidth_Sm?: string;
+  hoverBoxShadow_Sm?: string;
+  background_Sm?: string;
+  height_Sm?: string;
+  borderRigth_Sm?: string;
+  borderLeft_Sm?: string;
+  borderTop_Sm?: string;
+  borderBottom_Sm?: string;
+
+  // Medium Screen
+
+  maxWidth_Md?: string;
+  width_Md?: string;
+  heigth_Md?: string;
+  border_Md?: string;
+  borderRadius_Md?: string;
+  backgroundColor_Md?: string;
+  color_Md?: string;
+  displaybtn_Md?: string;
+  displayflex_Md?: string;
+  textAlign_Md?: string;
+  borderColor_Md?: string;
+  borderStyle_Md?: string;
+  boxShadow_Md?: string;
+  outLine_Md?: string;
+  margin_Md?: string;
+  padding_Md?: string;
+  fontFamily_Md?: string;
+  fontWeight_Md?: string;
+  fontSize_Md?: string;
+  lineHeight_Md?: string;
+  position_Md?: string;
+  verticalAlign_Md?: string;
+  justifyContent_Md?: string;
+  alignItems_Md?: string;
+  overflow_Md?: string;
+  opacity_Md?: string;
+  cursor_Md?: string;
+  whiteSpace_Md?: string;
+  textDecoration_Md?: string;
+  boxSizing_Md?: string;
+  appearance_Md?: string;
+  userSelect_Md?: string;
+  icon_Md?: string;
+  hoverBackgroundColor_Md?: string;
+  hoverBackground_Md?: string;
+  hoverColor_Md?: string;
+  hoverBorder_Md?: string;
+  hoverOpacity_Md?: string;
+  transition_Md?: string;
+  borderWidth_Md?: string;
+  hoverBoxShadow_Md?: string;
+  background_Md?: string;
+  height_Md?: string;
+  borderRigth_Md?: string;
+  borderLeft_Md?: string;
+  borderTop_Md?: string;
+  borderBottom_Md?: string;
+
+  // Large Screen
+
+  maxWidth_Lg?: string;
+  width_Lg?: string;
+  heigth_Lg?: string;
+  border_Lg?: string;
+  borderRadius_Lg?: string;
+  backgroundColor_Lg?: string;
+  color_Lg?: string;
+  displaybtn_Lg?: string;
+  displayflex_Lg?: string;
+  textAlign_Lg?: string;
+  borderColor_Lg?: string;
+  borderStyle_Lg?: string;
+  boxShadow_Lg?: string;
+  outLine_Lg?: string;
+  margin_Lg?: string;
+  padding_Lg?: string;
+  fontFamily_Lg?: string;
+  fontWeight_Lg?: string;
+  fontSize_Lg?: string;
+  lineHeight_Lg?: string;
+  position_Lg?: string;
+  verticalAlign_Lg?: string;
+  justifyContent_Lg?: string;
+  alignItems_Lg?: string;
+  overflow_Lg?: string;
+  opacity_Lg?: string;
+  cursor_Lg?: string;
+  whiteSpace_Lg?: string;
+  textDecoration_Lg?: string;
+  boxSizing_Lg?: string;
+  appearance_Lg?: string;
+  userSelect_Lg?: string;
+  icon_Lg?: string;
+  hoverBackgroundColor_Lg?: string;
+  hoverBackground_Lg?: string;
+  hoverColor_Lg?: string;
+  hoverBorder_Lg?: string;
+  hoverOpacity_Lg?: string;
+  transition_Lg?: string;
+  borderWidth_Lg?: string;
+  hoverBoxShadow_Lg?: string;
+  background_Lg?: string;
+  height_Lg?: string;
+  borderRigth_Lg?: string;
+  borderLeft_Lg?: string;
+  borderTop_Lg?: string;
+  borderBottom_Lg?: string;
+};
+export type listitemAttributes = {
+  text?: string;
+  children?: ReactNode;
+  onClick?: (event: Event) => void;
+
+  maxWidth?: string;
+  width?: string;
+  heigth?: string;
+  border?: string;
+  borderRadius?: string;
+  backgroundColor?: string;
+  color?: string;
+  displaybtn?: string;
+  displayflex?: string;
+  textAlign?: string;
+  borderColor?: string;
+  borderStyle?: string;
+  boxShadow?: string;
+  outLine?: string;
+  margin?: string;
+  padding?: string;
+  fontFamily?: string;
+  fontWeight?: string;
+  fontSize?: string;
+  lineHeight?: string;
+  position?: string;
+  verticalAlign?: string;
+  justifyContent?: string;
+  alignItems?: string;
+  overflow?: string;
+  opacity?: string;
+  cursor?: string;
+  whiteSpace?: string;
+  textDecoration?: string;
+  boxSizing?: string;
+  appearance?: string;
+  userSelect?: string;
+  icon?: string;
+  hoverBackgroundColor?: string;
+  hoverBackground?: string;
+  hoverColor?: string;
+  hoverBorder?: string;
+  hoverOpacity?: string;
+  transition?: string;
+  borderWidth?: string;
+  hoverBoxShadow?: string;
+  background?: string;
+  height?: string;
+  borderRigth?: string;
+  borderLeft?: string;
+  borderTop?: string;
+  borderBottom?: string;
+
+  // Media properties
+
+  // Small Screen
+
+  maxWidth_Sm?: string;
+  width_Sm?: string;
+  heigth_Sm?: string;
+  border_Sm?: string;
+  borderRadius_Sm?: string;
+  backgroundColor_Sm?: string;
+  color_Sm?: string;
+  displaybtn_Sm?: string;
+  displayflex_Sm?: string;
+  textAlign_Sm?: string;
+  borderColor_Sm?: string;
+  borderStyle_Sm?: string;
+  boxShadow_Sm?: string;
+  outLine_Sm?: string;
+  margin_Sm?: string;
+  padding_Sm?: string;
+  fontFamily_Sm?: string;
+  fontWeight_Sm?: string;
+  fontSize_Sm?: string;
+  lineHeight_Sm?: string;
+  position_Sm?: string;
+  verticalAlign_Sm?: string;
+  justifyContent_Sm?: string;
+  alignItems_Sm?: string;
+  overflow_Sm?: string;
+  opacity_Sm?: string;
+  cursor_Sm?: string;
+  whiteSpace_Sm?: string;
+  textDecoration_Sm?: string;
+  boxSizing_Sm?: string;
+  appearance_Sm?: string;
+  userSelect_Sm?: string;
+  icon_Sm?: string;
+  hoverBackgroundColor_Sm?: string;
+  hoverBackground_Sm?: string;
+  hoverColor_Sm?: string;
+  hoverBorder_Sm?: string;
+  hoverOpacity_Sm?: string;
+  transition_Sm?: string;
+  borderWidth_Sm?: string;
+  hoverBoxShadow_Sm?: string;
+  background_Sm?: string;
+  height_Sm?: string;
+  borderRigth_Sm?: string;
+  borderLeft_Sm?: string;
+  borderTop_Sm?: string;
+  borderBottom_Sm?: string;
+
+  // Medium Screen
+
+  maxWidth_Md?: string;
+  width_Md?: string;
+  heigth_Md?: string;
+  border_Md?: string;
+  borderRadius_Md?: string;
+  backgroundColor_Md?: string;
+  color_Md?: string;
+  displaybtn_Md?: string;
+  displayflex_Md?: string;
+  textAlign_Md?: string;
+  borderColor_Md?: string;
+  borderStyle_Md?: string;
+  boxShadow_Md?: string;
+  outLine_Md?: string;
+  margin_Md?: string;
+  padding_Md?: string;
+  fontFamily_Md?: string;
+  fontWeight_Md?: string;
+  fontSize_Md?: string;
+  lineHeight_Md?: string;
+  position_Md?: string;
+  verticalAlign_Md?: string;
+  justifyContent_Md?: string;
+  alignItems_Md?: string;
+  overflow_Md?: string;
+  opacity_Md?: string;
+  cursor_Md?: string;
+  whiteSpace_Md?: string;
+  textDecoration_Md?: string;
+  boxSizing_Md?: string;
+  appearance_Md?: string;
+  userSelect_Md?: string;
+  icon_Md?: string;
+  hoverBackgroundColor_Md?: string;
+  hoverBackground_Md?: string;
+  hoverColor_Md?: string;
+  hoverBorder_Md?: string;
+  hoverOpacity_Md?: string;
+  transition_Md?: string;
+  borderWidth_Md?: string;
+  hoverBoxShadow_Md?: string;
+  background_Md?: string;
+  height_Md?: string;
+  borderRigth_Md?: string;
+  borderLeft_Md?: string;
+  borderTop_Md?: string;
+  borderBottom_Md?: string;
+
+  // Large Screen
+
+  maxWidth_Lg?: string;
+  width_Lg?: string;
+  heigth_Lg?: string;
+  border_Lg?: string;
+  borderRadius_Lg?: string;
+  backgroundColor_Lg?: string;
+  color_Lg?: string;
+  displaybtn_Lg?: string;
+  displayflex_Lg?: string;
+  textAlign_Lg?: string;
+  borderColor_Lg?: string;
+  borderStyle_Lg?: string;
+  boxShadow_Lg?: string;
+  outLine_Lg?: string;
+  margin_Lg?: string;
+  padding_Lg?: string;
+  fontFamily_Lg?: string;
+  fontWeight_Lg?: string;
+  fontSize_Lg?: string;
+  lineHeight_Lg?: string;
+  position_Lg?: string;
+  verticalAlign_Lg?: string;
+  justifyContent_Lg?: string;
+  alignItems_Lg?: string;
+  overflow_Lg?: string;
+  opacity_Lg?: string;
+  cursor_Lg?: string;
+  whiteSpace_Lg?: string;
+  textDecoration_Lg?: string;
+  boxSizing_Lg?: string;
+  appearance_Lg?: string;
+  userSelect_Lg?: string;
+  icon_Lg?: string;
+  hoverBackgroundColor_Lg?: string;
+  hoverBackground_Lg?: string;
+  hoverColor_Lg?: string;
+  hoverBorder_Lg?: string;
+  hoverOpacity_Lg?: string;
+  transition_Lg?: string;
+  borderWidth_Lg?: string;
+  hoverBoxShadow_Lg?: string;
+  background_Lg?: string;
+  height_Lg?: string;
+  borderRigth_Lg?: string;
+  borderLeft_Lg?: string;
+  borderTop_Lg?: string;
+  borderBottom_Lg?: string;
+};
 ////////////////   Variables    ///////////////
 
 // School Features Section Home Page
@@ -1193,28 +1624,29 @@ export const features = {
 
 // Facilities Section Home Page
 export const facilitiesData = [
-  // {
-  //   btnText: "Why Us?",
-  //   heading: "Why eSkooly is the best school management software?",
-  //   details:
-  //     "Besides, eSkooly is a completely free online school management software, it has more school management features than any other online school management system in the market. It does not end here, eSkooly is still enhancing features. You will be automatically updated as a new feature will be a part of our free school management software. Some main school management features are given below.",
-  //   src: "/imgs/whyUs/desktop.png",
-  //   width: "23.063rem",
-  //   height: "18.75rem",
-  //   display: "none",
-  //   direction: "row",
-  // },
-  // {
-  //   btnText: "Manage Roles",
-  //   heading: "Seperate Portals Available",
-  //   details:
-  //     "our school management system comes with a separate portal for every user role. An admin portal with full controls, separate portals for Management staff, Accountant, Teachers, Parents, and Students.",
-  //   src: "/imgs/whyUs/full-team.png",
-  //   width: "35.375rem",
-  //   height: "23.313rem",
-  //   display: "none",
-  //   direction: "column",
-  // },
+  {
+    btnText: "Why Us?",
+    heading: "Why eSkooly is the best school management software?",
+    details:
+      "Besides, eSkooly is a completely free online school management software, it has more school management features than any other online school management system in the market. It does not end here, eSkooly is still enhancing features. You will be automatically updated as a new feature will be a part of our free school management software. Some main school management features are given below.",
+    src: "/imgs/whyUs/desktop.png",
+    width: "23.063rem",
+    height: "18.75rem",
+    display: "none",
+    direction: "row",
+  },
+  {
+    btnText: "Manage Roles",
+    heading: "Seperate Portals Available",
+    details:
+      "our school management system comes with a separate portal for every user role. An admin portal with full controls, separate portals for Management staff, Accountant, Teachers, Parents, and Students.",
+    src: "/imgs/whyUs/full-team.png",
+    width: "35.375rem",
+    height: "23.313rem",
+    // display: "block",
+    direction: "column",
+    align: "center",
+  },
   {
     btnText: "Message System",
     heading: "Messaging and file sharing system",

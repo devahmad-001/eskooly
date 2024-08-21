@@ -27,9 +27,7 @@ export default function Sections() {
               maxWidth="10rem"
               maxHeight="7rem"
               borderBottom={obj.borderBottom ? "2px solid white" : "none"}
-              borderRigth_Sm="none"
-              
-              
+              borderRigth_Sm="none"             
             >
               {obj.src && <Img src={obj.src} minWidth="8rem" minHeight="4rem" />}
             </Box>

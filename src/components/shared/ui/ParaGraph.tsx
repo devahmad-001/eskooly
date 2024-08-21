@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import { paraGraphAttributes } from "../../../../Type";
 export default function ParaGraph(props: paraGraphAttributes) {
   const Para = styled.p`
+    border-bottom: ${props.borderBottom};
     line-height: ${props.lineHeight};
     position: ${props.position};
     text-decoration: ${props.TextDecoration};
@@ -21,7 +22,9 @@ export default function ParaGraph(props: paraGraphAttributes) {
     color: var(${props.color});
     line-height: ${props.lineHeight};
     vertical-align: ${props.verticalAlign};
-
+    :hover{
+      border-bottom: ${props.hoverBorderBottom};
+    }
     @media screen and (max-width: 640px) {
       line-height: ${props.lineHeight_Sm};
       position: ${props.position_Sm};

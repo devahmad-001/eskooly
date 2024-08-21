@@ -1,25 +1,14 @@
-import Nav from "@/components/shared/nav/Nav";
-import ContactUS from "@/components/templates/homePage/contactUs/ContactUS";
-import DropUs from "@/components/templates/homePage/dropUs/DropUs";
-import Facilities from "@/components/templates/homePage/facilities/Facilities";
-import Allfeatures from "@/components/templates/homePage/featuress/allfeatures/AllFeatures";
-import SchoolFeatures from "@/components/templates/homePage/featuress/schoolFeatures/SchoolFeatures";
-import Globe from "@/components/templates/homePage/globe/Globe";
-import Management from "@/components/templates/homePage/managementSystem/Management";
-import Trust from "@/components/templates/homePage/trust/Trust";
-import React from "react";
+import PageTemplate from "@/components/extracted-HomePage/PageTemplate";
+import Menu from "@/components/templates/Dashboard/menu/Menu";
+import HomePage from "@/components/templates/homePage/HomePage";
+import LoginPage from "@/components/templates/pageSections/loginPageSection/LoginPage";
 export default function Home() {
   return (
     <>
-     {/* <DropUs/> */}
-      {/* <Globe /> */}
-      {/* <SchoolFeatures /> */}
-      {/* <Facilities /> */}
-      {/* <Allfeatures /> */}
-      {/* <Management /> */}
-      {/* <Trust/> */}
-      <ContactUS/>
-      {/* <Nav/> */}
+      {/* <LoginPage/> */}
+      {/* <PageTemplate/> */}
+      {/* <HomePage/> */}
+      <Menu />
     </>
   );
 }

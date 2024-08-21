@@ -15,19 +15,18 @@ export default function FacilitiesComp() {
             <Box
               key={index}
               display="flex"
-              justify-content="center"
-              columnGap="4.5rem"
-              width="100%"
-              justifyContent="center"
+              maxWidth="70vw"
+              justifyContent="space-between"
               flexDirection={obj.direction}
               alignItems="center"
               height="100%"
             >
               <Box
                 justifyContent="flex-start"
+                alignItems={obj.align}
                 display="flex"
                 rowGap="1.2rem"
-                width="31.5%"
+                maxWidth="42%"
                 flexDirection="column"
               >
                 <Button
@@ -55,7 +54,7 @@ export default function FacilitiesComp() {
                   lineHeight="1.7"
                   fontWeight="500"
                   color="--white"
-                  textAlign="start"
+                  textAlign={obj.align ? "center" : "start"}
                   fontSize="0.8rem"
                   text={obj.details}
                 />
@@ -105,7 +104,7 @@ export default function FacilitiesComp() {
                   />
                 )}
               </Box>
-              <Img height={obj.height} width={obj.width} src={obj.src} />
+              <Img maxHeight={obj.height} maxWidth={obj.width} src={obj.src} />
             </Box>
           );
         })}

@@ -1,10 +1,9 @@
+import Box from "@/components/shared/ui/FlexBox";
 import React from "react";
-import Form from "./Template";
+import ContactForm from "./ContactForm";
 
-export default function  ContactUS() {
-  return (
-    <>
-      <Form />
-    </>
-  );
+export default function ContactUS() {
+  return <Box>
+    <ContactForm/>
+  </Box>;
 }

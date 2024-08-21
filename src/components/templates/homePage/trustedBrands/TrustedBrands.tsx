@@ -1,12 +1,12 @@
 import React from "react";
-import Sections from "./TrustSections";
+import Sections from "./BrandSections";
 import Box from "@/components/shared/ui/FlexBox";
 import ParaGraph from "@/components/shared/ui/ParaGraph";
 import Heading from "@/components/shared/ui/Heading";
 import Button from "@/components/shared/ui/Button";
 import IconBtn from "@/components/shared/ui/IconBtn";
 
-export default function Trust() {
+export default function TrustedBrands() {
   return (
     <>
       <Box

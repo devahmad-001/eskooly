@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --black-: black;
   --white: white;
+  --red: red;
   --light-Navyblue: #09327f;
   --dark-Navyblue: #06183b;
   --dark-grey: darkgrey;
@@ -29,7 +29,6 @@
 body {
   /* background: var(--gradient-darkblue); */
 }
-
 
 .style-0 {
   /* changes */
@@ -66,14 +65,14 @@ body {
   outline: rgb(74, 74, 74) none 0px;
   padding: 20px 21px;
   text-align: center;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   /* ///// changes */
-   display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
- .style-4 {
+.style-4 {
   outline: rgb(50, 115, 220) none 0px;
   color: rgb(50, 115, 220);
   cursor: pointer;
@@ -513,8 +512,8 @@ body {
   font-size: 14px;
   position: relative;
   text-align: left;
-} 
- .style-50 {
+}
+.style-50 {
   border: none;
   display: block;
   width: 100% !important;
@@ -546,9 +545,9 @@ body {
   position: relative;
   vertical-align: top;
   user-select: none;
-} 
+}
 
- .style-51 {
+.style-51 {
   display: none;
   outline: rgb(74, 74, 74) none 0px;
   opacity: 0;
@@ -801,4 +800,3 @@ body {
 .register-section > img {
   width: 80%;
 }
-

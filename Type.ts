@@ -43,6 +43,11 @@ export type flexboxAttributes = {
   overflow?: string;
   justifySelf?: string;
   margin?: string;
+  top?: string;
+  bottom?: string;
+  left?: string;
+  right?: string;
+  zIndex?: number;
   // Media properties
 
   // Small screen

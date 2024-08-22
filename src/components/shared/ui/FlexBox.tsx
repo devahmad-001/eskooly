@@ -5,10 +5,16 @@ import { flexboxAttributes } from "../../../../Type";
 
 export default function Box(props: flexboxAttributes) {
   const FlexBox = styled.div`
+    top: ${props.top};
+    left: ${props.left};
+    bottom: ${props.bottom};
+    right: ${props.right};
+    z-index: ${props.zIndex};
     min-width: ${props.minWidth};
     max-width: ${props.maxWidth};
     min-height: ${props.minHeight};
     max-height: ${props.maxHeight};
+    border-radius: ${props.borderRadius};
     border-left: ${props.borderLeft};
     border-right: ${props.borderRigth};
     border-top: ${props.borderTop};

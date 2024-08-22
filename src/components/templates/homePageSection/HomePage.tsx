@@ -10,7 +10,12 @@ import Box from "@/components/shared/ui/FlexBox";
 export default function HomePage() {
   return (
     <>
-      <Box background="--gradient-darkblue" display="flex" flexDirection="column" flexWrap="wrap">
+      <Box
+        background="--gradient-darkblue"
+        display="flex"
+        flexDirection="column"
+        flexWrap="wrap"
+      >
         <Globe />
         <SchoolFeatures />
         <Facilities />

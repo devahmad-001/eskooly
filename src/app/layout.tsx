@@ -4,6 +4,11 @@ import "./globals.css";
 // import './core_lemonade.css'
 import Nav from "@/components/shared/nav/Nav";
 import Footer from "@/components/shared/footer/Footer";
+import { ThemeProviders } from "@/providers/ThemeProvider";
+import { SideBarProviders } from "@/providers/SidebarMargin";
+import { ReduxProviders } from "@/providers/ReduxProvider";
+import { Navbar } from "@/components/templates/dashboard/Navbar";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,9 +24,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <Nav/> */}
-        {children}
-        {/* <Footer/> */}
+        <ThemeProviders>
+        <ReduxProviders>
+          <SideBarProviders>
+            <Navbar/>
+           
+              {/* <Nav/> */}
+              {children}
+              {/* <Footer/> */}
+            
+          </SideBarProviders>
+          </ReduxProviders>
+        </ThemeProviders>
       </body>
     </html>
   );

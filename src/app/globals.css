@@ -5,7 +5,8 @@
 :root {
   --black-: black;
   --white: white;
-  --red: red;
+  --red: #ff0000;
+  --blue: #0000ff;
   --light-Navyblue: #09327f;
   --dark-Navyblue: #06183b;
   --dark-grey: darkgrey;

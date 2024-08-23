@@ -5,6 +5,7 @@ import { ReactNode } from "react";
 export type flexboxAttributes = {
   children?: ReactNode;
 
+  backgroundImgGradient?: any;
   gradient?: boolean;
   borderRigth?: string;
   borderLeft?: string;
@@ -24,6 +25,7 @@ export type flexboxAttributes = {
   display?: string;
   flexDirection?: string;
   flexWrap?: string;
+  filter?:string;
   justifyContent?: string;
   alignItems?: string;
   alignContent?: string;

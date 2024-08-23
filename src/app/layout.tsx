@@ -24,18 +24,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeProviders>
+        {/* <ThemeProviders>
         <ReduxProviders>
           <SideBarProviders>
-            <Navbar/>
+            <Navbar/> */}
            
               {/* <Nav/> */}
               {children}
               {/* <Footer/> */}
             
-          </SideBarProviders>
+          {/* </SideBarProviders>
           </ReduxProviders>
-        </ThemeProviders>
+        </ThemeProviders> */}
       </body>
     </html>
   );

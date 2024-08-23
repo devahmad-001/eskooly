@@ -5,6 +5,8 @@ import { flexboxAttributes } from "../../../../Type";
 
 export default function Box(props: flexboxAttributes) {
   const FlexBox = styled.div`
+    background-image: conic-gradient(red 30%, blue 30%, red 40%);
+    /* background-image: ${props.backgroundImgGradient}; */
     top: ${props.top};
     left: ${props.left};
     bottom: ${props.bottom};
@@ -41,6 +43,7 @@ export default function Box(props: flexboxAttributes) {
     flex-grow: ${props.flexGrow};
     flex-shrink: ${props.flexShrink};
     flex-basis: ${props.flexBasis};
+    filter: ${props.filter};
     order: ${props.order};
     overflow: ${props.overflow};
     margin: ${props.margin};

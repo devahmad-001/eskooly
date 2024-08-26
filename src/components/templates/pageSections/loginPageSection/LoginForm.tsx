@@ -116,7 +116,7 @@ export default function LoginForm() {
                     </h1>
                     <h3 className="style-54">Account Setup Is Completed</h3>
                     <p className="style-55">
-                      We've sent you an email containing all the information
+                      We&apos;ve sent you an email containing all the information
                       about your account and some useful links. Please have a
                       look and enjoy the world of free schooling by loging in.
                     </p>

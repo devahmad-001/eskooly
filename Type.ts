@@ -5,8 +5,10 @@ import { ReactNode } from "react";
 export type flexboxAttributes = {
   children?: ReactNode;
 
-  backgroundImgGradient?: string;
+  ConicGradient?: string;
+  LinearGradient?: string;
   gradient?: boolean;
+  boxShadow?: string;
   borderRigth?: string;
   borderLeft?: string;
   borderTop?: string;
@@ -14,14 +16,14 @@ export type flexboxAttributes = {
   backgroundSize?: string;
   backgroundRepeat?: string;
   backgroundImgURL?: string;
-  position?: string;
-  padding?: string;
+  borderRadius?: string;
   background?: string;
   border?: string;
-  borderRadius?: string;
+  backgroundColor?: string;
+  position?: string;
+  padding?: string;
   columnGap?: string;
   rowGap?: string;
-  backgroundColor?: string;
   display?: string;
   flexDirection?: string;
   flexWrap?: string;
@@ -50,6 +52,9 @@ export type flexboxAttributes = {
   left?: string;
   right?: string;
   zIndex?: number;
+  hoverBoxShadow?: string
+  opacity?: string;
+  hoverOpacity?: string;
   // Media properties
 
   // Small screen
@@ -1628,7 +1633,6 @@ export const features = {
     },
   ],
 };
-
 // Facilities Section Home Page
 export const facilitiesData = [
   {
@@ -1727,7 +1731,6 @@ export const facilitiesData = [
     direction: "row-reverse",
   },
 ];
-
 // TrustBox Home Page
 export const trustBoxData = [
   {
@@ -1813,3 +1816,104 @@ export const trustBoxData = [
   },
   {},
 ];
+
+// Dashboard 
+
+export const monthlySchoolData = [
+  {
+    heading: "Total Students",
+    icon: "student",
+    monthlyValues: "0",
+    bg: " --dark-purple"
+  },
+  {
+    heading: "Total Employees",
+    icon: "bag",
+    monthlyValues: "0",
+    bg: " --light-purple"
+  },
+  {
+    heading: "Revenue",
+    icon: "dollar",
+    monthlyValues: "$ 0",
+    bg: "--light-pink"
+  },
+  {
+    heading: "Total Profit",
+    icon: "dollar",
+    monthlyValues: "$ 0",
+    bg: "--dim-blue"
+  },
+
+]
+export const feeData = [
+  {
+    direction: "column",
+    title: "Estimation",
+    icon: "TargetIcon"
+  },
+  {
+    direction: "column-reverse",
+    title: "Collections",
+    icon: "CollectionIcon",
+    border: true
+  },
+  {
+    direction: "column-reverse",
+    title: "Remainings",
+    icon: " RemainingIcon",
+    border: true
+  },
+]
+export const presentRecord = [
+  {
+    title: "Today Absent Students",
+    titleColor: "--dark-pink",
+    status: "Attendance Not Marked Yet !",
+  },
+  {
+    title: "Today Present Employees",
+    titleColor: " --dim-blue",
+    status: "Attendance Not Marked Yet !",
+  },
+  {
+    title: "New Admissions",
+    titleColor: "--extradim-blue",
+    status: "No New Admissions This Month",
+  },
+]
+
+
+// export const feeData = [
+
+//   {
+//     array: [
+//       { direction: "column" },
+//       { title: "Estimation" },
+//       { icon: "TargetIcon" }
+//     ],
+//     color:"--red",
+//     border: false,
+
+//   },
+//   {
+//     array: [
+//       { direction: "column-reverse" },
+//       { title: "Collections" },
+//       { icon: "CollectionIcon" },
+//     ],
+//     color:"--blue",
+//     border: true,
+//   },
+//   {
+//     array: [
+//       { direction: "column-reverse" },
+//       { title: "Remainings" },
+//       { icon: " RemainingIcon" }
+//     ],
+//     color:"--green",
+//     border: true
+//   },
+// ]
+
+

@@ -5,6 +5,7 @@ import { flexboxAttributes } from "../../../../Type";
 
 export default function Box(props: flexboxAttributes) {
   const FlexBox = styled.div`
+   opacity: ${props.opacity};
     top: ${props.top};
     left: ${props.left};
     bottom: ${props.bottom};
@@ -21,7 +22,21 @@ export default function Box(props: flexboxAttributes) {
     border-bottom: ${props.borderBottom};
     background-size: ${props.backgroundSize};
     background-repeat: ${props.backgroundRepeat};
-    background-image: ${props.backgroundImgURL ? `url(${props.backgroundImgURL})` : `conic-gradient(${props.backgroundImgGradient})`};
+    box-shadow: ${props.boxShadow};
+    /* background-image: ${(props.backgroundImgURL && `url(${props.backgroundImgURL})`) ||
+    (props.ConicGradient && `conic-gradient(${props.ConicGradient})`) ||
+    (props.LinearGradient && `linear-gradient(${props.LinearGradient})`)
+    }; */
+    /* background-image:${props.backgroundImgURL
+      ? `url(${props.backgroundImgURL})`
+      : props.ConicGradient
+        ? `conic-gradient(${props.ConicGradient})`
+        : props.LinearGradient
+          ? `linear-gradient(${props.LinearGradient})`
+          : "none"
+    }; */
+    /* background-image:conic-gradient(${props.ConicGradient}); */
+    background-image:url(${props.backgroundImgURL});
     background-color: var(${props.backgroundColor});
     background: var(${props.background});
     position: ${props.position};
@@ -45,6 +60,11 @@ export default function Box(props: flexboxAttributes) {
     order: ${props.order};
     overflow: ${props.overflow};
     margin: ${props.margin};
+
+    :hover{
+      box-shadow:${props.hoverBoxShadow};
+      opacity: ${props.hoverOpacity};
+    }
 
     @media screen and (max-width: 640px) {
       column-gap: ${props.columnGap_Sm};

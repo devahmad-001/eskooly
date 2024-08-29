@@ -6,15 +6,15 @@ import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 import { getMenuList } from "./Menu-List";
-import { Button } from "@/components/shared/dashboardComp/button";
-import { ScrollArea } from "@/components/shared/dashboardComp/scrollArea";
+import { Button } from "@/components/shared/dashboard-menuComp/button";
+import { ScrollArea } from "@/components/shared/dashboard-menuComp/scrollArea";
 import { CollapseMenuButton } from "./collapse-menu-button";
 import {
   Tooltip,
   TooltipTrigger,
   TooltipContent,
   TooltipProvider,
-} from "@/components/shared/dashboardComp/tooltip";
+} from "@/components/shared/dashboard-menuComp/tooltip";
 
 interface MenuProps {
   isOpen: boolean | undefined;

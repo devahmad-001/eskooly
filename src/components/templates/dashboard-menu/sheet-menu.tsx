@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { MenuIcon, PanelsTopLeft } from "lucide-react";
 
-import { Button } from "@/components/shared/dashboardComp/button";
-import { Menu } from "@/components/templates/dashboard/menu";
+import { Button } from "@/components/shared/dashboard-menuComp/button";
+import { Menu } from "@/components/templates/dashboard-menu/menu";
 import {
   Sheet,
   SheetHeader,
   SheetContent,
   SheetTrigger,
-} from "@/components/shared/dashboardComp/sheet";
+} from "@/components/shared/dashboard-menuComp/sheet";
 
 export function SheetMenu() {
   return (

@@ -5,8 +5,11 @@ import { imgAttributes } from "../../../../Type";
 
 export default function Img(props: imgAttributes) {
   const Picture = styled.img`
-    width: 100%;
-    height: 100%;
+    margin: ${props.margin};
+    object-fit: ${props.objectCover};
+    aspect-ratio: ${props.aspectRatio};
+    width:${props.width};
+    height:${props.height};
     min-width: ${props.minWidth};
     min-height: ${props.minHeight};
     max-width: ${props.maxWidth};
@@ -14,7 +17,6 @@ export default function Img(props: imgAttributes) {
     padding: ${props.padding};
     align-self: ${props.alignSelf};
     justify-self: ${props.justSelf};
-
     @media screen and (max-width: 640px) {
       min-width: ${props.minWidth_Sm};
       max-width: ${props.maxWidth_Sm};

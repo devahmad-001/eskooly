@@ -66,21 +66,16 @@ export default function FacilitiesComp() {
                     text={obj.btnText}
                     maxWidth="12rem"
                     border="none"
-                    boxShadow=" rgba(0, 0, 0, 0.42) 0px 14px 26px -12px, 
-           rgba(0, 0, 0, 0.12) 0px 4px 23px 0px, rgba(0, 0, 0, 0.2) 0px 8px 10px -5px;"
                     outLine=" --white none 0px"
-                    borderColor="--white"
+                    borderColor=" --dark-pink"
                     opacity="0.8"
                     borderRadius="31.25rem"
                     padding="1.375rem 2.3rem"
-                    background="rgba(0, 0, 0, 0)
-                  linear-gradient(45deg, rgb(255, 128, 139), rgb(247, 144, 153)) repeat
-                   scroll 0% 0% / auto padding-box border-box;"
+                    background=" --light-pink"
                     justifyContent="center"
                     textAlign="center"
                     borderWidth="0px"
                     whiteSpace="nowrap"
-                    textDecoration="none solid --white"
                     boxSizing="border-box"
                     appearance="none"
                     fontSize="0.813rem"
@@ -91,16 +86,10 @@ export default function FacilitiesComp() {
                     position="relative"
                     verticalAlign="top"
                     userSelect="none"
-                    transition="all 0.5s ease"
+                    // transition="all 0.5s ease"
                     hoverOpacity="1"
-                    hoverBoxShadow=" rgba(0, 0, 0, 0.6) 0rem 0.875rem 1.625rem -0.75rem,
-             rgba(0, 0, 0, 0.15) 0px 4px 23px 0px,
-             rgba(0, 0, 0, 0.3) 0px 8px 10px -5px"
-                    hoverBackground="rgba(0, 0, 0, 0)
-                linear-gradient(45deg, rgb(244, 125, 135), rgb(235, 115, 125)) repeat
-              scroll 0% 0% / auto padding-box border-box"
+                    hoverBackground=" --dark-pink"
                     icon="MdPersonAddAlt"
-                    backgroundColor="rgba(0, 0, 0, 0)"
                   />
                 )}
               </Box>

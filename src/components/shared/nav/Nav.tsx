@@ -2,6 +2,7 @@ import Box from "../ui/FlexBox";
 import Img from "../ui/Img";
 import ParaGraph from "../ui/ParaGraph";
 import IconBtn from "../ui/IconBtn";
+import CustomLink from "../ui/CustomLink";
 
 export default function Nav() {
   return (
@@ -49,9 +50,19 @@ export default function Nav() {
               fontWeight="500"
               text="Help"
               padding="0.8rem 0.7rem"
-              hoverBorderBottom="1px solid red"
+              hoverBorderBottom="0.1rem solid blue"
               color="--white"
             />
+            <CustomLink 
+               
+              text="Dashboard"
+              fontFamily="sans-serif"
+              padding="0.8rem 0.7rem"
+              fontSize="0.9rem"
+              fontWeight="500"
+              // hoverBorderBottom="0.1rem solid blue"
+              color="--white" href='/dashboard' />
+
           </Box>
         </Box>
         <Box
@@ -103,7 +114,7 @@ export default function Nav() {
           />
           <IconBtn
             text="Login"
-            color="--black"
+            color="--black-"
             cursor="pointer"
             displaybtn="block"
             maxWidth="9rem"

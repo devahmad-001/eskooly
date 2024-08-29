@@ -6,6 +6,7 @@ import Allfeatures from "./featuress/allfeatures/AllFeatures";
 import Management from "./managementSystem/Management";
 import TrustedBrands from "./trustedBrands/TrustedBrands";
 import Box from "@/components/shared/ui/FlexBox";
+import ContactUS from "./contactUS/ContactUS";
 
 export default function HomePage() {
   return (
@@ -22,6 +23,7 @@ export default function HomePage() {
         <Allfeatures />
         <Management />
         <TrustedBrands />
+        <ContactUS />
       </Box>
     </>
   );

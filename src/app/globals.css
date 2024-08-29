@@ -10,18 +10,20 @@
   --t-pink:#ffe2e887;
   --light-blue: #0f5ef7;
   --dim-blue:#6889f6;
+  --median-blue: rgb(29 78 216);
   --green:green;
   --light-Navyblue: #09327f;
   --dark-Navyblue: #06183b;
   --dark-grey: darkgrey;
   --light-grey: rgb(237, 231, 231);
+  --dim-grey:rgb(209 213 219 );
   --purple: #b26ed6;
   --dim-blue:#5e81f4;
   --extradim-blue:#969ad6;
   --dark-purple: #5453ab;
   --light-purple:#a3a5da;
-  --light-pink: rgb(247, 144, 153);
-  --dark-pink: rgb(255, 128, 139);
+  --light-pink: #f79099;
+  --dark-pink: #ff808b;
   --gradient-darkblue: linear-gradient(
     to right,
     var(--light-Navyblue),
@@ -38,7 +40,7 @@
   --conic-gradient--red:var(var(--blue),var(--red),var(--dark-Navyblue),var(--blue))  
 }
 body {
-  /* background: var(--light-grey); */
+  /* background: var(  --gradient-darkblue); */
 }
 
 .style-0 {

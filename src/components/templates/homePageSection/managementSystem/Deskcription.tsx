@@ -107,13 +107,12 @@ export default function ManagementDeskcription() {
               text="Get started for free"
               borderRadius="31.25rem"
               padding="1.375rem 2.3rem"
-              color="rgb(255, 255, 255);"
-              background="rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;"
+              color="--white"
               cursor="pointer"
               justifyContent="center"
               textAlign="center"
               whiteSpace="nowrap"
-              textDecoration="none solid rgb(255, 255, 255)"
+              textDecoration="--white"
               boxSizing="border-box"
               appearance="none"
               fontSize="0.813rem"
@@ -129,10 +128,9 @@ export default function ManagementDeskcription() {
               hoverBoxShadow=" rgba(0, 0, 0, 0.6) 0rem 0.875rem 1.625rem -0.75rem,
      rgba(0, 0, 0, 0.15) 0px 4px 23px 0px,
      rgba(0, 0, 0, 0.3) 0px 8px 10px -5px"
-              hoverBackground="black"
+              hoverBackground="--black-"
               hoverBorder="2px solid black"
-              hoverColor="white"
-              backgroundColor="rgba(0, 0, 0, 0)"
+              hoverColor="--black-"
               heigth="3rem"
               border="2px solid white"
             />

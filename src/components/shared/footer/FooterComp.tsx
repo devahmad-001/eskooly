@@ -18,6 +18,7 @@ export default function FooterComp() {
         justifyContent="space-around"
         width="100%"
         alignItems="center"
+        height="100%"
       >
         <Box
           display="flex"

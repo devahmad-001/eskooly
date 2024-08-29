@@ -17,7 +17,7 @@ export default function IconBtn(props: iconbutton) {
     border-radius: ${props.borderRadius};
     padding: ${props.padding};
     color: var(${props.color});
-    background: ${props.background};
+    background: var(${props.background});
     background-color: var(${props.backgroundColor});
     border-width: ${props.borderWidth};
     cursor: ${props.cursor};
@@ -42,7 +42,7 @@ export default function IconBtn(props: iconbutton) {
         ${props.hoverBackground}
       ); /* Change background gradient on hover */
       box-shadow: var(${props.boxShadow}); /* Change shadow on hover */
-      opacity: var(${props.opacity});
+      opacity: ${props.opacity};
     }
 
     @media screen and (max-width: 640px) {

@@ -1,7 +1,7 @@
 "use client";
 import { useSelector } from "react-redux";
 import { cn } from "@/lib/utils";
-import { Sidebar } from "@/components/templates/dashboard/sidebar";
+import { Sidebar } from "@/components/templates/dashboard-menu/sidebar";
 
 export function SideBarProviders({ children }: any) {
   const { isOpen } = useSelector((state: any) => state.sidebar);

@@ -187,6 +187,8 @@ export type inputAttributes = {
   required?: true;
   minLength?: number;
   maxLength?: number;
+  padding?: string;
+  labelText?: string;
 
   fontSize?: string;
   height?: string;
@@ -288,6 +290,20 @@ export type inputAttributes = {
   position_Lg?: string;
   verticalAlign_Lg?: string;
 };
+export type labelAttributes = {
+  display?: string;
+  color?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  textDecoration?: string;
+  letterSpacing?: string;
+  lineHeight?: string;
+  text?: string;
+  textTransform?: string;
+  verticalAlign?: string;
+  textAlign?: string;
+  html?: string;
+}
 export type spanAttributes = {
   onClick?: () => void;
   text: string;
@@ -879,6 +895,8 @@ export type paraGraphAttributes = {
   verticalAlign_Lg?: string;
 };
 export type imgAttributes = {
+  aspectRatio?: string;
+  objectCover?: string;
   alt?: string;
   src?: string;
   height?: string;
@@ -887,6 +905,7 @@ export type imgAttributes = {
   maxWidth?: string;
   minHeight?: string;
   maxHeight?: string;
+  margin?: string;
   padding?: string;
   alignSelf?: string;
   justSelf?: string;
@@ -1731,6 +1750,35 @@ export const facilitiesData = [
     direction: "row-reverse",
   },
 ];
+// DropUS
+export const InputData = [
+  {
+    placeholder: "Enter your first name",
+    labeltext: "First Name *",
+    type: "text"
+  },
+  {
+    placeholder: "Enter your last name",
+    labeltext: "Last name *",
+    type: "text"
+  },
+  {
+    placeholder: "Enter your email",
+    labeltext: "Email *",
+    type: "email"
+  },
+  {
+    placeholder: "Enter your phone number",
+    labeltext: "Phone",
+    type: "number"
+  },
+  {
+    placeholder: "Enter your message",
+    labeltext: "Message *",
+    type: "textarea",
+    textarea: true,
+  },
+]
 // TrustBox Home Page
 export const trustBoxData = [
   {
@@ -1816,6 +1864,7 @@ export const trustBoxData = [
   },
   {},
 ];
+
 
 // Dashboard 
 

@@ -2,7 +2,7 @@
 
 import { ChevronLeft } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/shared/dashboardComp/button";
+import { Button } from "@/components/shared/dashboard-menuComp/button";
 import { useSelector, useDispatch } from "react-redux";
 import { setIsOpen } from "@/store/feature/SideBar.Slice";
 

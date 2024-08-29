@@ -86,12 +86,17 @@ export default function ChartBox() {
       },
     };
 
-    chartInstance = new Chart(chartRef?.current, config);
-    return () => {
-      if (chartInstance) {
-        chartInstance.destroy();
-      }
-    };
+    if (chartRef?.current) {
+      chartInstance = new Chart(chartRef.current, config);
+      return () => {
+        if (chartInstance) {
+          chartInstance.destroy();
+        }
+      };
+    } else {
+      console.error("Chart reference is null");
+    }
+    
   }, []);
 
   // Action handlers

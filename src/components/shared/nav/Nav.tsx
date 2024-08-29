@@ -53,16 +53,7 @@ export default function Nav() {
               hoverBorderBottom="0.1rem solid blue"
               color="--white"
             />
-            <CustomLink 
-               
-              text="Dashboard"
-              fontFamily="sans-serif"
-              padding="0.8rem 0.7rem"
-              fontSize="0.9rem"
-              fontWeight="500"
-              // hoverBorderBottom="0.1rem solid blue"
-              color="--white" href='/dashboard' />
-
+            
           </Box>
         </Box>
         <Box

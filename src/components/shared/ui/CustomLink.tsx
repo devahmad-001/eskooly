@@ -1,8 +1,9 @@
 'use client'
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { btnAttributes } from '../../../../Type';
 
-function CustomLink(props:any) {
+function CustomLink(props: any | btnAttributes) {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
@@ -12,6 +13,8 @@ function CustomLink(props:any) {
                 color: props.color,
                 textDecoration: isHovered ? 'underline' : 'none',
                 fontWeight: props.fontWeight,
+                fontSize: props.fontSize,
+                lineHeight: props.lineHeight,
             }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}

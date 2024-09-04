@@ -8,12 +8,12 @@ import {
 } from "@/components/shared/ui/Icons";
 import ParaGraph from "@/components/shared/ui/ParaGraph";
 import React from "react";
-import { monthlySchoolData } from "../../../../Type";
+import { monthlySchoolData } from "../../../../../Type";
 
 export default function SchoolDataCard() {
   return (
     <>
-      <Box display="flex" justifyContent="space-around"  >
+      <Box display="flex" justifyContent="space-around" columnGap="1rem"  >
         {monthlySchoolData.map((data, index) => {
           return (
             <>

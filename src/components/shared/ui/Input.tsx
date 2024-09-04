@@ -12,6 +12,13 @@ export default function Input(props: inputAttributes) {
   border-color: var(${props.borderColor});
   border-radius: ${props.borderRadius};
   background-color: var(${props.backgroundColor});
+
+  &:focus{
+    outline: ${props.focusOutline};
+    outline-offset: ${props.focusOutlineOffset};
+    box-shadow: ${props.focusBoxShadow};
+    border-color: ${props.focusBorderColor};
+  }
   `;
   return (
     <>

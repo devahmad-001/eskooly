@@ -9,8 +9,8 @@ export default function WelcomeBox() {
     return (
         <>
 
-            <Box position='relative'  width='678px' height='120px' >
-                <Box position='absolute'  padding='0 0 1rem 0' borderRadius='0.5rem' backgroundColor=' --t-pink' top='1.7rem' left='0' right='0' bottom='0' display=' flex' justifyContent='space-around' alignItems='end'>
+            <Box position='relative' width='640px'  border='1px solid #ff808b' height='120px' >
+                <Box position='absolute' padding='0 0 1rem 0' borderRadius='0.5rem' backgroundColor=' --t-pink' top='1.7rem' left='0' right='0' bottom='0' display=' flex' justifyContent='space-around' alignItems='end'>
                     <Box>
                         <Heading text='Welcome to Admin Dashboard' fontFamily='sans-serif' fontSize='0.95rem' fontWeight='700' color="--dark-pink" />
                         <ParaGraph fontSize='0.96rem' text="Your Account is not Verified yet!" color=" --dark-grey" />

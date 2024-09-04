@@ -4,7 +4,6 @@
 import { ReactNode } from "react";
 export type flexboxAttributes = {
   children?: ReactNode;
-
   ConicGradient?: string;
   LinearGradient?: string;
   gradient?: boolean;
@@ -212,7 +211,12 @@ export type inputAttributes = {
   lineHeight?: string;
   position?: string;
   verticalAlign?: string;
-
+  outLine?: string;
+  outLineOffset?: string;
+  focusBoxShadow?: string;
+  focusOutline?: string;
+  focusBorderColor?: string;
+  focusOutlineOffset?: string;
   // Media properties
 
   // Small Screen
@@ -501,10 +505,11 @@ export type spanAttributes = {
   userselect_Lg?: string;
 };
 export type btnAttributes = {
+
   text: string;
   icon?: React.ElementType;
   onClick?: () => void;
-
+  outlineOffset?: string;
   outLine?: string;
   maxWidth?: string;
   cursor?: string;
@@ -954,7 +959,7 @@ export type imgAttributes = {
   justSelf_Lg?: string;
 };
 export type iconbutton = {
-  text?: string;
+  text?: string | ReactNode;
   onClick?: (event: Event) => void;
 
   maxWidth?: string;

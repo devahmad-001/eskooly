@@ -8,7 +8,7 @@ import {
 } from "@/components/shared/ui/Icons";
 import ParaGraph from "@/components/shared/ui/ParaGraph";
 import React from "react";
-import { feeData, monthlySchoolData } from "../../../../Type";
+import { feeData, monthlySchoolData } from "../../../../../Type";
 export default function FeeCard() {
   return (
     <>

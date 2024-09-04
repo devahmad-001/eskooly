@@ -7,12 +7,8 @@ import { Button } from "@/components/shared/dashboard-menuComp/button";
 import { Menu } from "./menu";
 import { SidebarToggle } from "./sidebar-toggle";
 import { useSelector, useDispatch } from "react-redux";
-import Dashboard from "@/app/dashboard/page";
-import Box from "@/components/shared/ui/FlexBox";
-
 export function Sidebar() {
   const { isOpen } = useSelector((state: any) => state.sidebar);
-
   return (
     <>
       <aside
@@ -49,7 +45,6 @@ export function Sidebar() {
           <Menu isOpen={isOpen} />
         </div>
       </aside>
-      {/* <Dashboard /> */}
     </>
   );
 }

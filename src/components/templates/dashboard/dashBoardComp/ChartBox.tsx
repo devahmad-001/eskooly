@@ -75,7 +75,7 @@ export default function ChartBox() {
           title: {
             display: true,
             text: 'Chart.js Line Chart',
-            
+
           }
         },
         scales: {
@@ -96,83 +96,86 @@ export default function ChartBox() {
     } else {
       console.error("Chart reference is null");
     }
-    
+
   }, []);
 
   // Action handlers
-  const actions = [
-    {
-      name: 'Randomize',
-      handler() {
-        chartInstance.data.datasets.forEach((dataset: any) => {
-          dataset.data = randomNumbers({ count: chartInstance.data.labels.length, min: -100, max: 100 });
-        });
-        chartInstance.update();
-      }
-    },
-    {
-      name: 'Add Dataset',
-      handler() {
-        const data = chartInstance.data;
-        const dsColor = namedColor(chartInstance.data.datasets.length);
-        const newDataset = {
-          label: 'Dataset ' + (data.datasets.length + 1),
-          backgroundColor: transparentize(dsColor, 0.5),
-          borderColor: dsColor,
-          data: randomNumbers({ count: data.labels.length, min: -100, max: 100 }),
-        };
-        chartInstance.data.datasets.push(newDataset);
-        chartInstance.update();
-      }
-    },
-    {
-      name: 'Add Data',
-      handler() {
-        const data = chartInstance.data;
-        if (data.datasets.length > 0) {
-          data.labels = getMonths(data.labels.length + 1);
+  // const actions = [
+  //   {
+  //     name: 'Randomize',
+  //     handler() {
+  //       chartInstance.data.datasets.forEach((dataset: any) => {
+  //         dataset.data = randomNumbers({ count: chartInstance.data.labels.length, min: -100, max: 100 });
+  //       });
+  //       chartInstance.update();
+  //     }
+  //   },
+  //   {
+  //     name: 'Add Dataset',
+  //     handler() {
+  //       const data = chartInstance.data;
+  //       const dsColor = namedColor(chartInstance.data.datasets.length);
+  //       const newDataset = {
+  //         label: 'Dataset ' + (data.datasets.length + 1),
+  //         backgroundColor: transparentize(dsColor, 0.5),
+  //         borderColor: dsColor,
+  //         data: randomNumbers({ count: data.labels.length, min: -100, max: 100 }),
+  //       };
+  //       chartInstance.data.datasets.push(newDataset);
+  //       chartInstance.update();
+  //     }
+  //   },
+  //   {
+  //     name: 'Add Data',
+  //     handler() {
+  //       const data = chartInstance.data;
+  //       if (data.datasets.length > 0) {
+  //         data.labels = getMonths(data.labels.length + 1);
 
-          for (let index = 0; index < data.datasets.length; ++index) {
-            data.datasets[index].data.push(Math.floor(Math.random() * (100 - (-100)) + (-100)));
-          }
+  //         for (let index = 0; index < data.datasets.length; ++index) {
+  //           data.datasets[index].data.push(Math.floor(Math.random() * (100 - (-100)) + (-100)));
+  //         }
 
-          chartInstance.update();
-        }
-      }
-    },
-    {
-      name: 'Remove Dataset',
-      handler() {
-        chartInstance.data.datasets.pop();
-        chartInstance.update();
-      }
-    },
-    {
-      name: 'Remove Data',
-      handler() {
-        chartInstance.data.labels.splice(-1, 1); // remove the label first
+  //         chartInstance.update();
+  //       }
+  //     }
+  //   },
+  //   {
+  //     name: 'Remove Dataset',
+  //     handler() {
+  //       chartInstance.data.datasets.pop();
+  //       chartInstance.update();
+  //     }
+  //   },
+  //   {
+  //     name: 'Remove Data',
+  //     handler() {
+  //       chartInstance.data.labels.splice(-1, 1); // remove the label first
 
-        chartInstance.data.datasets.forEach((dataset: any) => {
-          dataset.data.pop();
-        });
+  //       chartInstance.data.datasets.forEach((dataset: any) => {
+  //         dataset.data.pop();
+  //       });
 
-        chartInstance.update();
-      }
-    }
-  ];
+  //       chartInstance.update();
+  //     }
+  //   }
+  // ];
 
   return (
-    <div>
-      <div style={{ width: '600px' }}>
-        <canvas ref={chartRef}></canvas>
-      </div>
+    <>
       <div>
-        {actions.map((action, index) => (
+        <div style={{ width: '630px', borderRadius: "1rem", border: "1px solid grey", padding: '2rem' }}>
+          <canvas ref={chartRef}></canvas>
+        </div>
+        <div>
+          {/* {actions.map((action, index) => (
           <button key={index} onClick={action.handler}>
             {action.name}
           </button>
-        ))}
+          ))} */}
+        </div>
       </div>
-    </div>
+      
+    </>
   );
 }

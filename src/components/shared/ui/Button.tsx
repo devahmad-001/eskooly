@@ -18,6 +18,7 @@ export default function Button(props: btnAttributes) {
     transition: ${props.transition};
     color: var(${props.color});
     background: var(${props.background});
+    outline-offset: ${props.outlineOffset};
     background-color: var(${props.backgroundColor});
     border-color: var(${props.borderColor});
     border-width: ${props.borderWidth};
@@ -25,6 +26,7 @@ export default function Button(props: btnAttributes) {
     font-family: ${props.fontFamily};
     font-size: ${props.fontSize};
     box-sizing: ${props.boxSizing};
+    
     box-shadow: ${props.boxShadow};
     margin: ${props.margin};
     position: ${props.position};
@@ -33,6 +35,7 @@ export default function Button(props: btnAttributes) {
       background-color: var(${props.hoverBackgroundColor});
     }
 
+    
     @media screen and (max-width: 640px) {
       width: ${props.width_Sm};
       max-width: ${props.maxWidth_Sm};

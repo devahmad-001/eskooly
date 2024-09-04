@@ -53,15 +53,19 @@ export default function Nav() {
               hoverBorderBottom="0.1rem solid blue"
               color="--white"
             />
-            <CustomLink 
-               
-              text="Dashboard"
+            <ParaGraph
               fontFamily="sans-serif"
-              padding="0.8rem 0.7rem"
               fontSize="0.9rem"
               fontWeight="500"
-              // hoverBorderBottom="0.1rem solid blue"
-              color="--white" href='/dashboard' />
+              color="--white"
+              padding="0.8rem 0.7rem"
+              hoverBorderBottom="0.1rem solid blue"
+              text={
+                <>
+                  <CustomLink href='/dashboard' text="Dash " />
+                </>
+              }
+            />
 
           </Box>
         </Box>
@@ -72,7 +76,9 @@ export default function Nav() {
           alignItems="center"
         >
           <IconBtn
-            text="Sign Up"
+            text={<>
+              <CustomLink href='/sign-up' text="Sign Up " />
+            </>}
             color="--white"
             cursor="pointer"
             displaybtn="block"
@@ -113,7 +119,9 @@ export default function Nav() {
             backgroundColor="rgba(0, 0, 0, 0)"
           />
           <IconBtn
-            text="Login"
+            text={<>
+              <CustomLink href='/login' text="Login " />
+            </>}
             color="--black-"
             cursor="pointer"
             displaybtn="block"
@@ -153,6 +161,7 @@ export default function Nav() {
             icon="MdPersonAddAlt"
             backgroundColor="rgba(0, 0, 0, 0)"
           />
+
         </Box>
       </Box>
     </>

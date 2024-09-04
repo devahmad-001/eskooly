@@ -7,7 +7,7 @@ import ParaGraph from '@/components/shared/ui/ParaGraph'
 export default function SmsGateWayCard() {
   return (
     <>
-      <Box position='relative' width='350px' height='120px' >
+      <Box position='relative' width='330px' height='120px' >
         <Box position='absolute' padding='0 0 1rem 0' borderRadius='0.5rem' backgroundColor='--dark-purple' top='1.7rem' left='0' right='0' bottom='0' display=' flex' justifyContent='space-around' alignItems='end'>
           <Box>
             <Heading text='Free SMS Gateway' fontFamily='sans-serif' fontSize='0.85rem' fontWeight='700' color="--white" />

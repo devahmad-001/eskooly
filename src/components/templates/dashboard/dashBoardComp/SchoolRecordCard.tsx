@@ -3,7 +3,7 @@ import Heading from '@/components/shared/ui/Heading'
 import { CancelIcon, SadFaceIcon } from '@/components/shared/ui/Icons'
 import ParaGraph from '@/components/shared/ui/ParaGraph'
 import React from 'react'
-import { presentRecord } from '../../../../Type'
+import { presentRecord } from '../../../../../Type'
 
 export default function SchoolRecordCard() {
     return (
@@ -14,7 +14,7 @@ export default function SchoolRecordCard() {
                     presentRecord.map((data) => {
                         return (
                             <>
-                                <Box borderRadius='0.26rem' display='flex' padding='1.2rem' flexDirection='column' justifyContent='space-around' hoverBoxShadow=' 0px 0px 19px 11px rgba(199,198,204,1)' width='42.5rem' height='10rem' backgroundColor='--white' margin='0 auto' >
+                                <Box borderRadius='0.26rem' display='flex' padding='1.2rem' flexDirection='column' justifyContent='space-around' hoverBoxShadow=' 0px 0px 19px 11px rgba(199,198,204,1)' width='40rem' height='10rem' backgroundColor='--white' margin='0 auto' >
                                     <Box display='flex' justifyContent='space-between' alignItems='center' >
                                         <Heading color={data.titleColor} fontFamily='sans-serif' fontSize='medium' fontWeight='700' text={data.title} />
                                         <CancelIcon width='1.2rem' height="1.2rem" color='grey' />

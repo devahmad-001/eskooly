@@ -11,7 +11,7 @@ function CustomLink(props: any | btnAttributes) {
             href={props.href}
             style={{
                 color: props.color,
-                textDecoration: isHovered ? 'underline' : 'none',
+                textDecoration: isHovered ? `${props.hoverunderline}` : 'none',
                 fontWeight: props.fontWeight,
                 fontSize: props.fontSize,
                 lineHeight: props.lineHeight,

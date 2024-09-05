@@ -27,7 +27,7 @@ export function Sidebar() {
             variant="link"
             asChild
           >
-            <Link href="/dashboard" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2">
               <SchoolIcon className="w-6 h-6 mr-1" />
               {/* Icon */}
               <h1

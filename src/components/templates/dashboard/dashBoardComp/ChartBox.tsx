@@ -3,9 +3,10 @@ import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
 
 export default function ChartBox() {
-  const chartRef = useRef(null);
-  let chartInstance: any = null;
+ 
+ 
 
+<<<<<<< HEAD:src/components/templates/dashboard/dashBoardComp/ChartBox.tsx
   // Helper function to generate months
   function getMonths(count: any) {
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -177,5 +178,13 @@ export default function ChartBox() {
       </div>
       
     </>
+=======
+   
+
+  return (
+    <div>
+     
+    </div>
+>>>>>>> 47e83f5b23ee567a301d1c4a659d923224a4c0a6:src/components/templates/dashBoard/ChartBox.tsx
   );
 }

@@ -53,6 +53,7 @@ export default function Nav() {
               hoverBorderBottom="0.1rem solid blue"
               color="--white"
             />
+<<<<<<< HEAD
             <ParaGraph
               fontFamily="sans-serif"
               fontSize="0.9rem"
@@ -67,6 +68,9 @@ export default function Nav() {
               }
             />
 
+=======
+            
+>>>>>>> 47e83f5b23ee567a301d1c4a659d923224a4c0a6
           </Box>
         </Box>
         <Box

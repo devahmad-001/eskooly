@@ -7,7 +7,6 @@ import Footer from "@/components/shared/footer/Footer";
 import { ThemeProviders } from "@/providers/ThemeProvider";
 import { SideBarProviders } from "@/providers/SidebarMargin";
 import { ReduxProviders } from "@/providers/ReduxProvider";
-import { Navbar } from "@/components/templates/dashboard-menu/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,18 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-
-        {/* <ReduxProviders>
-          <SideBarProviders>
-            <Navbar /> */}
-
         <Nav />
         {children}
         <Footer />
-
-        {/* </SideBarProviders>
-        </ReduxProviders> */}
-
       </body>
     </html>
   );

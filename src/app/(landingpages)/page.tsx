@@ -7,7 +7,7 @@ import LoginForm from "@/components/templates/pageSections/LoginPage/LoginForm";
 export default function Home() {
   return (
     <>
-      {/* <HomePage/> */}
+      <HomePage/>
       {/* <LoginForm/> */}
     </>
   );
